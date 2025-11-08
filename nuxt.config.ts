@@ -4,7 +4,45 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', 'nuxt-booster'],
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', 'nuxt-booster', '@nuxtjs/seo'],
+
+  site: {
+    url: 'https://adiletai.com',
+    name: 'AdiletAI - Юридический AI Помощник для Казахстана',
+    description: 'Интеллектуальный юридический помощник на базе искусственного интеллекта с интеграцией RAG. Получайте точные ответы на юридические вопросы, основанные на законодательстве Казахстана.',
+    defaultLocale: 'ru',
+    trailingSlash: false
+  },
+
+  ogImage: {
+    enabled: true,
+    fonts: [
+      'Inter:400',
+      'Inter:700'
+    ]
+  },
+
+  sitemap: {
+    strictNuxtContentPaths: true,
+    sitemaps: true
+  },
+
+  robots: {
+    enabled: true,
+    groups: [
+      {
+        userAgent: ['*'],
+        allow: ['/'],
+        disallow: ['/api/', '/admin/']
+      },
+      {
+        userAgent: ['Googlebot', 'Bingbot', 'Yandex'],
+        allow: ['/'],
+        crawlDelay: 0
+      }
+    ]
+  },
+
   vite: {
     plugins: [
       tailwindcss(),
@@ -40,6 +78,6 @@ export default defineNuxtConfig({
       component: '0%',
       asset: '0%'
     }
-    
+
   }
 });
