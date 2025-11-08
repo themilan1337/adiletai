@@ -18,16 +18,16 @@
     Интеллектуальный юридический помощник на базе искусственного интеллекта с интеграцией RAG. Получайте точные ответы на юридические вопросы, основанные на законодательстве Казахстана.
   </p>
   <div class="flex flex-wrap items-center mt-8 gap-2">
-    <button
+    <NuxtLink to="https://app.adiletai.com/"
       class="relative flex items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-md text-white bg-blue-700 outline outline-blue-700 hover:bg-blue-600 focus-visible:outline-blue-600 dark:bg-blue-600 dark:text-zinc-100 dark:outline-blue-600 dark:hover:bg-blue-700 dark:focus-visible:outline-blue-500 h-9 px-4 text-sm"
     >
       Начать сейчас
-    </button>
-    <button
+    </NuxtLink>
+    <NuxtLink to="#"
       class="relative flex items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 justify-center rounded-md text-zinc-600 bg-zinc-50 outline outline-zinc-100 hover:bg-zinc-200 focus-visible:outline-zinc-600 dark:text-zinc-100 dark:bg-zinc-800 dark:outline-zinc-800 dark:hover:bg-zinc-700 dark:focus-visible:outline-zinc-700 h-9 px-4 text-sm"
     >
       Наши возможности
-    </button>
+    </NuxtLink>
   </div>
 </div>
 <div class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-4">
