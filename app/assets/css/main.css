@@ -1,5 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
 @import "tailwindcss";
 
 html, body {
     background-color: #18181b;
+}
+
+.gs {
+    font-family: 'Product Sans' !important;
+    font-weight: normal;
 }
