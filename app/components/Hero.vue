@@ -59,7 +59,7 @@
 <div
   class="relative mt-6 sm:mt-8 md:mt-4 overflow-hidden mb-16 sm:mb-20 md:mb-24 rounded-xl sm:rounded-2xl shadow outline outline-zinc-200 dark:outline-zinc-800 mx-4 sm:mx-0"
 >
-  <img
+  <NuxtImg
     src="/app.png"
     loading="eager"
     decoding="async"
@@ -67,6 +67,7 @@
     fetchpriority="auto"
     width="1200"
     height="1200"
+    :placeholder="[50, 25, 75, 5]"
     class="object-cover w-full h-full"
   />
 </div>
