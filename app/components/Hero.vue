@@ -67,7 +67,7 @@
     fetchpriority="auto"
     width="1200"
     height="1200"
-    :placeholder="[25, 12.5, 25, 5]"
+    :placeholder="[50, 25, 75, 5]"
     class="object-cover w-full h-full"
   />
 </div>
