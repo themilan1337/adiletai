@@ -1,9 +1,13 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-white min-h-screen flex flex-col">
+    <Header />
     <NuxtLayout>
-      <NuxtPage />
+      <main class="flex-1">
+        <NuxtPage />
+      </main>
       <Analytics/>
     </NuxtLayout>
+    <Footer />
   </div>
 </template>
 <script setup lang="ts">

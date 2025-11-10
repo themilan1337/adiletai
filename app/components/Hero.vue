@@ -2,7 +2,7 @@
 
 <header class="w-full max-w-xl px-4 sm:px-0">
   <h1
-    class="text-3xl gs text-center sm:text-left font-bold sm:font-normal sm:text-2xl md:text-3xl lg:text-4xl mt-6 sm:mt-8 md:mt-12 tracking-tight text-zinc-900 lg:text-balance"
+   class="text-3xl gs text-center sm:text-left font-bold sm:font-normal sm:text-2xl md:text-3xl lg:text-4xl mt-6 sm:mt-8 md:mt-12 tracking-tight text-zinc-900 lg:text-balance"
   >
     Юридическая помощь доступна каждому с AdiletAI
   </h1>
