@@ -28,7 +28,7 @@
 </header>
 <section class="mt-8 sm:mt-10 md:mt-12 px-4 sm:px-0 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4" aria-label="Ключевые преимущества AdiletAI">
   <article class="flex flex-col gap-1">
-    <p class="text-lg sm:text-xl md:text-base font-medium text-zinc-900" aria-label="Точность на 83 процента выше">+83%</p>
+    <p class="text-lg sm:text-xl md:text-base font-medium text-zinc-900" aria-label="Точность на 83 процента выше">+183%</p>
     <h3 class="gs text-xs sm:text-sm font-medium text-zinc-600">
       Точность выше ChatGPT
     </h3>
@@ -46,7 +46,7 @@
     </h3>
   </article>
   <article class="flex flex-col gap-1">
-    <p class="text-lg sm:text-xl md:text-base font-medium text-zinc-900" aria-label="Более 10 пользователей">10+</p>
+    <p class="text-lg sm:text-xl md:text-base font-medium text-zinc-900" aria-label="Более 10 пользователей">130+</p>
     <h3 class="gs text-xs sm:text-sm font-medium text-zinc-600">
       Пользователей
     </h3>

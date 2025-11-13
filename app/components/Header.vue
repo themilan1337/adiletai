@@ -55,7 +55,7 @@
         <!-- CTA Button Desktop -->
         <div class="hidden lg:flex items-center gap-3">
           <NuxtLink
-            to="/#start"
+            to="https://app.adiletai.com/"
             class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 rounded-md text-white bg-zinc-700 outline outline-zinc-700 hover:bg-zinc-600 focus-visible:outline-zinc-600 h-9 px-4 text-sm"
           >
             Начать сейчас
