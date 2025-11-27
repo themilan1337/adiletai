@@ -27,6 +27,12 @@
             Как это работает
           </NuxtLink>
           <NuxtLink
+            to="https://docs.adiletai.com/"
+            class="gs px-3 py-2 text-sm text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 rounded-md transition-colors"
+          >
+            AdiletDocs
+          </NuxtLink>
+          <NuxtLink
             to="/pricing"
             class="gs px-3 py-2 text-sm text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 rounded-md transition-colors"
           >
@@ -109,6 +115,13 @@
               class="gs px-3 py-2 text-sm text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 rounded-md transition-colors"
             >
               Как это работает
+            </NuxtLink>
+            <NuxtLink
+              to="https://docs.adiletai.com/"
+              @click="closeMenu"
+              class="gs px-3 py-2 text-sm text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 rounded-md transition-colors"
+            >
+              AdiletDocs
             </NuxtLink>
             <NuxtLink
               to="/pricing"
