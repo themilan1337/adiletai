@@ -29,10 +29,10 @@
               Как это работает
             </NuxtLink>
             <NuxtLink
-              to="/pricing"
+              to="https://wa.me/+77770172008"
               class="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
             >
-              Тарифы
+              Запросить демо
             </NuxtLink>
             <NuxtLink
               to="/use-cases"

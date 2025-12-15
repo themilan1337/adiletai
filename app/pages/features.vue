@@ -364,10 +364,10 @@
               Начать бесплатно
             </NuxtLink>
             <NuxtLink
-              to="/pricing"
+              to="https://wa.me/+77770172008"
               class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md text-white bg-zinc-600 hover:bg-zinc-500 focus-visible:outline-white h-11 px-8 text-base w-full sm:w-auto"
             >
-              Посмотреть тарифы
+              Получить демо
             </NuxtLink>
           </div>
         </div>

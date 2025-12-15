@@ -205,8 +205,8 @@
             <p class="text-sm text-zinc-600">История и миссия AdiletAI</p>
           </NuxtLink>
 
-          <NuxtLink to="/pricing" class="p-6 bg-zinc-50 rounded-xl border border-zinc-200 hover:border-zinc-300 transition-colors">
-            <h3 class="gs font-medium text-zinc-900 mb-2">Тарифы</h3>
+          <NuxtLink to="https://wa.me/+77770172008" class="p-6 bg-zinc-50 rounded-xl border border-zinc-200 hover:border-zinc-300 transition-colors">
+            <h3 class="gs font-medium text-zinc-900 mb-2">Запросить демо</h3>
             <p class="text-sm text-zinc-600">Выберите подходящий план</p>
           </NuxtLink>
 
