@@ -78,7 +78,7 @@
             <p class="text-sm sm:text-base text-zinc-600 mb-4">
               Зарегистрируйтесь с помощью email или начните использовать без регистрации на бесплатном тарифе.
             </p>
-            <NuxtLink to="https://app.adiletai.com/" class="text-sm text-zinc-900 underline gs">
+            <NuxtLink to="https://wa.me/+77770172008" class="text-sm text-zinc-900 underline gs">
               Начать →
             </NuxtLink>
           </article>
