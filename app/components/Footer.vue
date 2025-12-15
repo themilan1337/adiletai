@@ -5,6 +5,7 @@
         <!-- Company Info -->
         <div class="flex flex-col gap-4">
           <NuxtLink to="/" class="flex items-center gap-2 text-zinc-900 hover:text-zinc-700 transition-colors">
+            <NuxtImg src="/logo.png" class="h-8"></NuxtImg>
             <span class="text-2xl font-bold gs">AdiletAI</span>
           </NuxtLink>
           <p class="text-sm text-zinc-600">

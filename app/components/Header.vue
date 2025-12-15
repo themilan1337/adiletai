@@ -3,6 +3,7 @@
     <div class="container mx-auto px-4 sm:px-0">
       <nav class="flex items-center justify-between h-14" aria-label="Главная навигация">
         <NuxtLink to="/" class="flex items-center gap-2 text-zinc-900 hover:text-zinc-700 transition-colors">
+          <NuxtImg src="/logo.png" class="h-8"></NuxtImg>
           <span class="text-xl sm:text-2xl font-bold gs">AdiletAI</span>
         </NuxtLink>
 
