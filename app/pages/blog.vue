@@ -199,7 +199,7 @@
             Начните получать юридические консультации прямо сейчас
           </p>
           <NuxtLink
-            to="https://console.adiletai.com"
+            to="https://console.adiletai.com/auth/register"
             class="relative inline-flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md text-white bg-zinc-700 hover:bg-zinc-600 focus-visible:outline-zinc-600 h-11 px-8 text-base"
           >
             Начать сейчас
