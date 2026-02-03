@@ -46,10 +46,10 @@
             Контакты
           </NuxtLink>
           <NuxtLink
-            to="https://docs.adiletai.com/"
+            to="/blog"
             class="gs px-3 py-2 text-sm text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 rounded-md transition-colors"
           >
-            AdiletDocs
+            Блог
           </NuxtLink>
         </div>
 
