@@ -244,16 +244,16 @@
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <NuxtLink
-            to="https://wa.me/+77770172008"
+            to="https://console.adiletai.com"
             class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md text-zinc-900 bg-white hover:bg-zinc-100 focus-visible:outline-white h-11 px-8 text-base w-full sm:w-auto"
           >
-            Получить демо
+            Начать сейчас
           </NuxtLink>
           <NuxtLink
-            to="https://wa.me/+77770172008"
+            to="https://console.adiletai.com"
             class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md text-white bg-zinc-600 hover:bg-zinc-500 focus-visible:outline-white h-11 px-8 text-base w-full sm:w-auto"
           >
-            Получить демо
+            Начать сейчас
           </NuxtLink>
         </div>
       </div>
@@ -318,7 +318,7 @@ useSchemaOrg([
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://wa.me/+77770172008?q={search_term_string}'
+        urlTemplate: 'https://console.adiletai.com?q={search_term_string}'
       },
       'query-input': 'required name=search_term_string'
     }

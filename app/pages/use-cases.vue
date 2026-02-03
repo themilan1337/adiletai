@@ -322,16 +322,16 @@
           </p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
             <NuxtLink
-              to="https://wa.me/+77770172008"
+              to="https://console.adiletai.com"
               class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md text-white bg-zinc-700 hover:bg-zinc-600 focus-visible:outline-zinc-600 h-11 px-8 text-base w-full sm:w-auto"
             >
-              Получить демо
+              Начать сейчас
             </NuxtLink>
             <NuxtLink
-              to="https://wa.me/+77770172008"
+              to="https://console.adiletai.com"
               class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md text-zinc-600 bg-zinc-50 outline outline-zinc-100 hover:bg-zinc-200 focus-visible:outline-zinc-600 h-11 px-8 text-base w-full sm:w-auto"
             >
-              Получить демо
+              Начать сейчас
             </NuxtLink>
           </div>
         </div>
