@@ -34,12 +34,10 @@ export default defineNuxtConfig({
       {
         userAgent: ['*'],
         allow: ['/'],
-        disallow: ['/api/', '/admin/']
       },
       {
         userAgent: ['Googlebot', 'Bingbot', 'Yandex'],
         allow: ['/'],
-        crawlDelay: 0
       }
     ]
   },

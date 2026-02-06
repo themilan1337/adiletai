@@ -19,7 +19,7 @@
           </p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
             <NuxtLink
-              to="https://console.adiletai.com/auth/register"
+              to="https://app.adiletai.com/auth/register"
               class="w-full sm:w-auto px-8 py-4 bg-zinc-900 text-white rounded-xl font-semibold hover:bg-zinc-800 transition-all shadow-lg hover:shadow-xl text-center gs"
             >
               Попробовать бесплатно
