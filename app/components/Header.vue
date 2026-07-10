@@ -55,12 +55,14 @@
 
         <!-- CTA Button Desktop -->
         <div class="hidden lg:flex items-center gap-3">
-          <NuxtLink
-            to="https://app.adiletai.com/auth/register"
+          <a
+            :href="CALENDLY_URL"
+            target="_blank"
+            rel="noopener"
             class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 rounded-md text-white bg-zinc-700 outline outline-zinc-700 hover:bg-zinc-600 focus-visible:outline-zinc-600 h-9 px-4 text-sm"
           >
-            Начать сейчас
-          </NuxtLink>
+            Забронировать демо
+          </a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -140,13 +142,15 @@
               AdiletDocs
             </NuxtLink>
             <div class="pt-2 mt-2 border-t border-zinc-200">
-              <NuxtLink
-                to="https://app.adiletai.com/auth/register"
+              <a
+                :href="CALENDLY_URL"
+                target="_blank"
+                rel="noopener"
                 @click="closeMenu"
                 class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 rounded-md text-white bg-zinc-700 outline outline-zinc-700 hover:bg-zinc-600 focus-visible:outline-zinc-600 h-10 px-4 text-sm"
               >
-                Начать сейчас
-              </NuxtLink>
+                Забронировать демо
+              </a>
             </div>
           </div>
         </div>

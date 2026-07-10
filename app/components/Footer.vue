@@ -9,7 +9,7 @@
             <span class="text-2xl font-bold gs">AdiletAI</span>
           </NuxtLink>
           <p class="text-sm text-zinc-600">
-            Юридическая помощь с использованием искусственного интеллекта. Делаем право доступным каждому.
+            Корпоративная ИИ-платформа для юридических департаментов и юридических фирм. Изолированный контур, верифицируемые ответы, экономика в цифрах.
           </p>
         </div>
 
@@ -29,12 +29,14 @@
             >
               Как это работает
             </NuxtLink>
-            <NuxtLink
-              to="https://app.adiletai.com/auth/register"
+            <a
+              :href="CALENDLY_URL"
+              target="_blank"
+              rel="noopener"
               class="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
             >
               Запросить демо
-            </NuxtLink>
+            </a>
             <NuxtLink
               to="/use-cases"
               class="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
