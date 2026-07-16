@@ -3,28 +3,6 @@
     <!-- Hero Section -->
     <Hero />
 
-    <!-- Social Proof Section -->
-    <section class="max-w-4xl mx-auto px-4 sm:px-6 mt-16 sm:mt-20 md:mt-24">
-      <div class="text-center mb-10 sm:mb-12">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl gs font-bold text-zinc-900 tracking-tight">
-          Нам доверяют лидеры рынка
-        </h2>
-      </div>
-
-      <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-8 sm:p-10 text-center">
-        <p class="text-base sm:text-lg text-zinc-700 max-w-2xl mx-auto">
-          AdiletAI уже работает на коммерческой основе в международной юридической фирме
-          <strong class="text-zinc-900">Morgan Lewis Kazakhstan</strong>. Это не пилот и не эксперимент — это продукт в ежедневной боевой эксплуатации у фирмы, чьё имя является отраслевым стандартом качества.
-        </p>
-        <div class="mt-6 flex items-start gap-3 border-l-2 border-zinc-300 pl-4 text-left max-w-xl mx-auto">
-          <span class="text-lg shrink-0" aria-hidden="true">🏛️</span>
-          <p class="text-sm text-zinc-600">
-            <strong class="text-zinc-900">Внедрено и работает.</strong> Международная юридическая фирма Morgan Lewis Kazakhstan использует AdiletAI в реальной практике.
-          </p>
-        </div>
-      </div>
-    </section>
-
     <!-- Features Section -->
     <section id="features" class="max-w-4xl mx-auto px-4 sm:px-6 mt-16 sm:mt-20 md:mt-24">
       <div class="text-center mb-12 sm:mb-16">
@@ -254,8 +232,8 @@ const objections = [
     a: 'AdiletAI разворачивается в вашем изолированном контуре и работает в связке с внутренними политиками ИБ — мы не требуем выносить конфиденциальные данные во внешнее публичное облако. Внедрение проходит как управляемый проект с вашей службой безопасности и IT: от пилота на ограниченном наборе документов до полного контура.'
   },
   {
-    q: 'Кто уже реально платит вам деньги за это, а не тестирует бесплатно? Что вы гарантируете по SLA и уровню доступа к данным — юридически, в договоре, а не на словах?',
-    a: 'AdiletAI уже внедрён и работает на коммерческой основе в международной юридической фирме Morgan Lewis Kazakhstan. Продукт проверен лидером рынка в боевых условиях. Уровни доступа, безопасность и обязательства фиксируются договором.'
+    q: 'Что вы гарантируете по SLA и уровню доступа к данным — юридически, в договоре, а не на словах?',
+    a: 'Уровни доступа, безопасность и обязательства фиксируются договором. SLA, регламент обработки и удаления данных — юридически закреплённые условия сотрудничества, а не маркетинговые обещания.'
   }
 ]
 
@@ -269,7 +247,7 @@ const demoAgenda = [
 // SEO Meta Tags
 useSeoMeta({
   title: 'AdiletAI — корпоративная ИИ-платформа для юридических департаментов и юрфирм',
-  description: 'AdiletAI снимает рутину с юридического департамента: анализ и ревью договоров, драфтинг документов, внутренняя база знаний со ссылкой на первоисточник. Изолированный контур, банковское шифрование, без обучения модели на ваших данных. В промышленной эксплуатации в Morgan Lewis Kazakhstan.',
+  description: 'AdiletAI снимает рутину с юридического департамента: анализ и ревью договоров, драфтинг документов, внутренняя база знаний со ссылкой на первоисточник. Изолированный контур, банковское шифрование, без обучения модели на ваших данных.',
   keywords: 'корпоративный юридический ии, автоматизация юридического департамента, ревью договоров ии, драфтинг документов ии, RAG для юристов, legal ai казахстан, безопасность данных юридическая фирма, adiletai',
   author: 'AdiletAI',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
@@ -278,7 +256,7 @@ useSeoMeta({
   ogType: 'website',
   ogUrl: 'https://adiletai.com',
   ogTitle: 'AdiletAI — корпоративная ИИ-платформа для юридических департаментов',
-  ogDescription: 'Анализ и ревью договоров, драфтинг документов, верифицируемая база знаний. Изолированный контур и банковское шифрование. Уже работает в Morgan Lewis Kazakhstan.',
+  ogDescription: 'Анализ и ревью договоров, драфтинг документов, верифицируемая база знаний. Изолированный контур и банковское шифрование.',
   ogImage: 'https://adiletai.com/og-image.png',
   ogImageAlt: 'AdiletAI — корпоративный юридический ИИ-помощник',
   ogLocale: 'ru_RU',
@@ -287,7 +265,7 @@ useSeoMeta({
   // Twitter Card
   twitterCard: 'summary_large_image',
   twitterTitle: 'AdiletAI — корпоративный ИИ для юридических департаментов',
-  twitterDescription: 'Ревью и драфтинг договоров, верифицируемая база знаний со ссылкой на первоисточник. Изолированный контур. В эксплуатации в Morgan Lewis Kazakhstan.',
+  twitterDescription: 'Ревью и драфтинг договоров, верифицируемая база знаний со ссылкой на первоисточник. Изолированный контур.',
   twitterImage: 'https://adiletai.com/twitter-image.png',
   twitterSite: '@adiletai',
   twitterCreator: '@adiletai',

@@ -25,7 +25,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 gap-6">
             <div>
               <h3 class="gs font-medium text-zinc-900 mb-3">Типичные задачи:</h3>
               <ul class="space-y-2 text-sm text-zinc-700">
@@ -47,14 +47,6 @@
                 </li>
               </ul>
             </div>
-
-            <div class="bg-white rounded-xl p-6">
-              <p class="text-xs text-zinc-500 mb-2">Реальный кейс:</p>
-              <p class="text-sm text-zinc-700 italic mb-4">
-                "Мне нужно было срочно проверить договор аренды офиса. AdiletAI за минуту выявил несколько потенциальных рисков и подсказал, какие пункты нужно изменить."
-              </p>
-              <p class="text-xs gs text-zinc-600">— Асем, владелица интернет-магазина</p>
-            </div>
           </div>
         </article>
 
@@ -70,7 +62,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 gap-6">
             <div>
               <h3 class="gs font-medium text-zinc-900 mb-3">Типичные задачи:</h3>
               <ul class="space-y-2 text-sm text-zinc-700">
@@ -92,14 +84,6 @@
                 </li>
               </ul>
             </div>
-
-            <div class="bg-white rounded-xl p-6">
-              <p class="text-xs text-zinc-500 mb-2">Реальный кейс:</p>
-              <p class="text-sm text-zinc-700 italic mb-4">
-                "Работодатель задерживал зарплату. AdiletAI объяснил мои права, помог составить претензию и подсказал, куда обращаться. Вопрос решился за неделю!"
-              </p>
-              <p class="text-xs gs text-zinc-600">— Ерлан, водитель</p>
-            </div>
           </div>
         </article>
 
@@ -115,7 +99,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 gap-6">
             <div>
               <h3 class="gs font-medium text-zinc-900 mb-3">Типичные задачи:</h3>
               <ul class="space-y-2 text-sm text-zinc-700">
@@ -137,14 +121,6 @@
                 </li>
               </ul>
             </div>
-
-            <div class="bg-white rounded-xl p-6">
-              <p class="text-xs text-zinc-500 mb-2">Реальный кейс:</p>
-              <p class="text-sm text-zinc-700 italic mb-4">
-                "Готовясь к экзамену по гражданскому праву, я использую AdiletAI для быстрого поиска нужных статей. Экономлю часы, которые раньше тратила на поиск в книгах!"
-              </p>
-              <p class="text-xs gs text-zinc-600">— Айгерим, студентка 3 курса</p>
-            </div>
           </div>
         </article>
 
@@ -160,7 +136,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 gap-6">
             <div>
               <h3 class="gs font-medium text-zinc-900 mb-3">Типичные задачи:</h3>
               <ul class="space-y-2 text-sm text-zinc-700">
@@ -182,14 +158,6 @@
                 </li>
               </ul>
             </div>
-
-            <div class="bg-white rounded-xl p-6">
-              <p class="text-xs text-zinc-500 mb-2">Реальный кейс:</p>
-              <p class="text-sm text-zinc-700 italic mb-4">
-                "AdiletAI помогает мне быстро проверять типовые договоры, экономя 10-15 часов в неделю. Теперь я могу уделять больше времени сложным делам."
-              </p>
-              <p class="text-xs gs text-zinc-600">— Марат, юрист с 8-летним стажем</p>
-            </div>
           </div>
         </article>
 
@@ -205,7 +173,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 gap-6">
             <div>
               <h3 class="gs font-medium text-zinc-900 mb-3">Типичные задачи:</h3>
               <ul class="space-y-2 text-sm text-zinc-700">
@@ -227,14 +195,6 @@
                 </li>
               </ul>
             </div>
-
-            <div class="bg-white rounded-xl p-6">
-              <p class="text-xs text-zinc-500 mb-2">Реальный кейс:</p>
-              <p class="text-sm text-zinc-700 italic mb-4">
-                "Внедрили AdiletAI для всех отделов. Теперь HR, бухгалтерия и закупки могут получать юридические консультации 24/7, не отвлекая юридический отдел."
-              </p>
-              <p class="text-xs gs text-zinc-600">— Дина, юрисконсульт ТОО "Алем"</p>
-            </div>
           </div>
         </article>
 
@@ -250,7 +210,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 gap-6">
             <div>
               <h3 class="gs font-medium text-zinc-900 mb-3">Типичные задачи:</h3>
               <ul class="space-y-2 text-sm text-zinc-700">
@@ -271,14 +231,6 @@
                   <span>Анализ законопроектов</span>
                 </li>
               </ul>
-            </div>
-
-            <div class="bg-white rounded-xl p-6">
-              <p class="text-xs text-zinc-500 mb-2">Реальный кейс:</p>
-              <p class="text-sm text-zinc-700 italic mb-4">
-                "Наша НПО помогает малоимущим гражданам. AdiletAI позволяет нам быстро консультировать большее количество людей, не увеличивая штат юристов."
-              </p>
-              <p class="text-xs gs text-zinc-600">— Сауле, координатор НПО</p>
             </div>
           </div>
         </article>
@@ -342,20 +294,20 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Примеры использования AdiletAI - Кейсы и истории пользователей',
-  description: 'Узнайте, как предприниматели, юристы, студенты и компании используют AdiletAI для решения юридических задач. Реальные кейсы и результаты.',
-  keywords: 'примеры adiletai, кейсы ai юриста, как использовать adiletai, истории пользователей, применение ai в праве',
+  title: 'Примеры использования AdiletAI - Сценарии применения',
+  description: 'Узнайте, как предприниматели, юристы, студенты и компании могут использовать AdiletAI для решения юридических задач.',
+  keywords: 'примеры adiletai, сценарии ai юриста, как использовать adiletai, применение ai в праве',
   robots: 'index, follow',
 
   ogType: 'website',
   ogUrl: 'https://adiletai.com/use-cases',
-  ogTitle: 'Примеры использования AdiletAI - Реальные кейсы',
-  ogDescription: 'Реальные истории того, как разные пользователи применяют AdiletAI для решения юридических задач',
+  ogTitle: 'Примеры использования AdiletAI - Сценарии применения',
+  ogDescription: 'Сценарии применения AdiletAI для решения юридических задач',
   ogImage: 'https://adiletai.com/og-image.png',
 
   twitterCard: 'summary_large_image',
   twitterTitle: 'Примеры использования AdiletAI',
-  twitterDescription: 'Кейсы и истории пользователей AI юриста',
+  twitterDescription: 'Сценарии применения AI юриста',
   twitterImage: 'https://adiletai.com/twitter-image.png'
 })
 

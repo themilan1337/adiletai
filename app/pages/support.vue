@@ -215,11 +215,6 @@
             <p class="text-sm text-zinc-600">Кейсы использования</p>
           </NuxtLink>
 
-          <NuxtLink to="/testimonials" class="p-6 bg-zinc-50 rounded-xl border border-zinc-200 hover:border-zinc-300 transition-colors">
-            <h3 class="gs font-medium text-zinc-900 mb-2">Отзывы</h3>
-            <p class="text-sm text-zinc-600">Мнения пользователей</p>
-          </NuxtLink>
-
           <NuxtLink to="/legal/terms" class="p-6 bg-zinc-50 rounded-xl border border-zinc-200 hover:border-zinc-300 transition-colors">
             <h3 class="gs font-medium text-zinc-900 mb-2">Условия</h3>
             <p class="text-sm text-zinc-600">Правила использования</p>

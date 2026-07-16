@@ -63,12 +63,6 @@
               О нас
             </NuxtLink>
             <NuxtLink
-              to="/testimonials"
-              class="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-            >
-              Отзывы
-            </NuxtLink>
-            <NuxtLink
               to="/blog"
               class="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
             >
