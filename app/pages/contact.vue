@@ -65,14 +65,10 @@ const related = [
         <AppButton :href="CALENDLY_URL" size="lg" icon="hugeicons:arrow-right-02">
           {{ t('common.cta.demo') }}
         </AppButton>
-        <!-- mailto stays in this tab, so a plain link with the secondary button look instead of AppButton (href = new tab) -->
-        <a
-          :href="mailto()"
-          class="inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-control bg-surface px-6 text-base font-medium text-ink ring-1 ring-line-strong transition-colors duration-150 ring-inset select-none hover:bg-stone-100"
-        >
+        <AppButton :href="mailto()" variant="secondary" size="lg">
           <Icon name="hugeicons:mail-01" class="size-4!" aria-hidden="true" />
           {{ CONTACT_EMAIL }}
-        </a>
+        </AppButton>
       </template>
     </PageHero>
 

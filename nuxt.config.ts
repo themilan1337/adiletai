@@ -16,9 +16,11 @@ export default defineNuxtConfig({
   ssr: true,
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  css: ['./app/assets/css/main.css'],
+  // Self-hosted variable fonts (npm, split by unicode-range so Cyrillic files load only on RU/KK pages):
+  // Inter for text, Literata with the optical-size axis for headings.
+  css: ['@fontsource-variable/inter/index.css', '@fontsource-variable/inter/wght-italic.css', '@fontsource-variable/literata/opsz.css', './app/assets/css/main.css'],
   // @nuxtjs/i18n must come before @nuxtjs/seo so site config, sitemap and schema.org pick up the locales.
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/icon', '@nuxtjs/i18n', '@nuxtjs/seo'],
+  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/icon', '@nuxtjs/i18n', '@nuxtjs/seo'],
 
   app: {
     head: {
@@ -46,21 +48,11 @@ export default defineNuxtConfig({
       { code: 'kk', language: 'kk-KZ', name: 'Қазақша', dir: 'ltr', files: files('kk') },
     ],
     // No server redirects by language: every URL is stable and crawlable, and pages stay prerenderable.
-    // LocaleSuggestion.vue offers the visitor's language instead.
     detectBrowserLanguage: false,
   },
 
-  fonts: {
-    defaults: {
-      weights: [400, 500, 600, 700],
-      styles: ['normal'],
-      // Kazakh letters (ә ғ қ ң ө ұ ү һ і) live in cyrillic-ext.
-      subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
-    },
-  },
-
   icon: {
-    serverBundle: { collections: ['hugeicons'] },
+    serverBundle: { collections: ['hugeicons', 'circle-flags'] },
     clientBundle: { scan: true },
   },
 

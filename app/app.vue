@@ -48,7 +48,6 @@ useSchemaOrg([
 
 <template>
   <div class="flex min-h-screen flex-col">
-    <LocaleSuggestion />
     <SiteHeader />
     <main id="main" class="flex-1">
       <NuxtPage />

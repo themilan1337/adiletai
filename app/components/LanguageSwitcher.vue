@@ -70,7 +70,7 @@ watch(() => route.fullPath, () => close())
       @click="open ? close() : openMenu()"
       @keydown="onButtonKeydown"
     >
-      <Icon name="hugeicons:globe-02" class="size-4" aria-hidden="true" />
+      <Icon :name="LOCALE_FLAGS[locale]!" mode="svg" class="size-4.5" aria-hidden="true" />
       <span>{{ SHORT[locale] }}</span>
       <Icon name="hugeicons:arrow-down-01" class="size-3.5 transition-transform" :class="{ 'rotate-180': open }" aria-hidden="true" />
     </button>
@@ -91,10 +91,11 @@ watch(() => route.fullPath, () => close())
           :hreflang="l.language"
           :lang="l.language"
           :aria-current="l.code === locale ? 'true' : undefined"
-          class="flex items-center justify-between gap-3 rounded-control px-3 py-2 text-sm text-ink-muted hover:bg-stone-100 hover:text-ink focus:bg-stone-100 focus:text-ink focus:outline-none"
+          class="flex items-center gap-2.5 rounded-control px-3 py-2 text-sm text-ink-muted hover:bg-stone-100 hover:text-ink focus:bg-stone-100 focus:text-ink focus:outline-none"
           @click="close()"
         >
-          {{ l.name }}
+          <Icon :name="LOCALE_FLAGS[l.code]!" mode="svg" class="size-4.5 shrink-0" aria-hidden="true" />
+          <span class="flex-1">{{ l.name }}</span>
           <Icon v-if="l.code === locale" name="hugeicons:tick-02" class="size-4 text-accent-600" aria-hidden="true" />
         </NuxtLink>
       </li>

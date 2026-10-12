@@ -25,3 +25,7 @@ logs
 
 # Local browser-automation artefacts
 .playwright-mcp
+
+# Trial / personal-use font files: never commit or deploy
+/ABC Arizona Font Superfamily/
+/sohne-font-family/

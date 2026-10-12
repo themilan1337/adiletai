@@ -26,9 +26,6 @@
       "label": "Language",
       "current": "Language: {language}"
     },
-    "localeSuggest": {
-      "dismiss": "Dismiss"
-    },
     "footer": {
       "tagline": "Legal AI platform for in-house legal teams and law firms in Kazakhstan.",
       "product": "Product",

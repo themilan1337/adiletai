@@ -2,11 +2,12 @@
 
 /*
   Design tokens. Neutrals are Tailwind stone (the same palette as the product at business.adiletai.com);
-  the only accent is the logo teal #017595. Fonts are self-hosted by @nuxt/fonts.
+  the only accent is the logo teal #017595. Fonts come from @fontsource-variable (see nuxt.config css):
+  Inter for text, Literata for headings; both cover Kazakh letters.
 */
 @theme {
-  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
-  --font-display: "Source Serif 4", "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
+  --font-display: "Literata Variable", Georgia, "Times New Roman", serif;
   --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
 
   --text-display-1: clamp(2.5rem, 1.9rem + 2.4vw, 4rem);
@@ -91,7 +92,8 @@
 
   /* break-word: a long Kazakh word in display type wraps instead of overflowing at 360px. */
   h1, h2, h3, .font-display { overflow-wrap: break-word; }
-  .font-display { font-optical-sizing: auto; font-variant-numeric: lining-nums; }
+  /* Literata's opsz axis is pinned mid-range: the low-contrast, sturdy cut reads closer to ABC Arizona than its 72pt display cut. */
+  .font-display { font-variation-settings: "opsz" 32; font-variant-numeric: lining-nums; }
 
   :focus-visible { outline: 2px solid var(--color-accent-600); outline-offset: 2px; }
   /* accent-600 is ~2.7:1 on the night background; accent-300 clears the 3:1 non-text minimum (WCAG 1.4.11). */

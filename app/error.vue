@@ -3,7 +3,6 @@ import type { NuxtError } from '#app'
 
 const props = defineProps<{ error: NuxtError }>()
 const { t } = useI18n()
-const localePath = useLocalePath()
 const is404 = computed(() => props.error?.statusCode === 404)
 const copy = computed(() => is404.value ? 'errors.notFound' : 'errors.generic')
 
@@ -31,20 +30,12 @@ useSeoMeta({
           {{ t(`${copy}.text`) }}
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-3">
-          <NuxtLink
-            :to="localePath('/')"
-            class="inline-flex h-10 items-center rounded-control bg-stone-900 px-4 text-sm font-medium text-white hover:bg-stone-800"
-            @click="clearError()"
-          >
+          <AppButton to="/" @click="clearError()">
             {{ t('errors.home') }}
-          </NuxtLink>
-          <NuxtLink
-            :to="localePath('/contact')"
-            class="inline-flex h-10 items-center rounded-control px-4 text-sm font-medium text-ink ring-1 ring-inset ring-line-strong hover:bg-stone-100"
-            @click="clearError()"
-          >
+          </AppButton>
+          <AppButton to="/contact" variant="secondary" @click="clearError()">
             {{ t('errors.contact') }}
-          </NuxtLink>
+          </AppButton>
         </div>
       </div>
     </main>

@@ -85,9 +85,10 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
               :hreflang="l.language"
               :lang="l.language"
               :aria-current="l.code === locale ? 'true' : undefined"
-              class="block rounded-control px-3 py-2 text-sm"
+              class="flex items-center gap-2 rounded-control px-3 py-2 text-sm"
               :class="l.code === locale ? 'bg-stone-200/70 font-medium text-ink' : 'text-ink-muted hover:bg-stone-100'"
             >
+              <Icon :name="LOCALE_FLAGS[l.code]!" mode="svg" class="size-4 shrink-0" aria-hidden="true" />
               {{ l.name }}
             </NuxtLink>
           </li>
