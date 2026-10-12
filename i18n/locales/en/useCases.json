@@ -1,0 +1,222 @@
+{
+  "useCases": {
+    "meta": {
+      "title": "AI for in-house legal teams and law firms in Kazakhstan",
+      "description": "How in-house legal teams, law firms and compliance teams in Kazakhstan can use AdiletAI: contract review, due diligence, legal research, court practice, tax."
+    },
+    "hero": {
+      "title": "AI for in-house legal teams and law firms",
+      "lead": "Six tasks that legal teams in Kazakhstan handle, shown step by step: the situation, what you do in AdiletAI and what you get at the end.",
+      "secondary": "See the platform"
+    },
+    "audiences": {
+      "title": "Three teams, one platform.",
+      "continuation": "Each starts from its own tasks under Kazakhstan law",
+      "tasksLabel": "Typical tasks",
+      "items": [
+        {
+          "title": "In-house legal teams",
+          "body": "For corporate legal departments. Contracts arrive from every business unit, and the business needs answers the team can check against the law.",
+          "tasks": [
+            "Prepare for a negotiation on a counterparty’s draft",
+            "Review a contract portfolio before renewals or an audit",
+            "Answer a business question with citations to the law",
+            "Produce a Kazakh or English version of a contract"
+          ]
+        },
+        {
+          "title": "Law firms",
+          "body": "For firms that run many matters at once: a private vault for each client, deal or matter, and research the partner can check against the source.",
+          "tasks": [
+            "Run due diligence on a target company’s contracts",
+            "Prepare for a hearing with an analysis of court practice",
+            "Research a question of Kazakhstan law for a client memo",
+            "Translate documents for an international client"
+          ]
+        },
+        {
+          "title": "Compliance and tax teams",
+          "body": "For teams that check the company’s documents and processes against the law and want to see which article an answer rests on.",
+          "tasks": [
+            "Answer a tax question with the Tax Code article",
+            "Find the contracts that lack a personal data clause",
+            "Research a requirement of Kazakhstan law with citations"
+          ]
+        }
+      ]
+    },
+    "tasks": {
+      "title": "Six tasks, step by step.",
+      "continuation": "What you do in AdiletAI and what you get at the end"
+    },
+    "labels": {
+      "situation": "The situation",
+      "steps": "What you do",
+      "outputs": "What you get"
+    },
+    "modules": {
+      "assistant": "More about the Assistant",
+      "contractReview": "More about contract review",
+      "playbook": "More about the practice profile",
+      "vault": "More about Vault",
+      "review": "More about review tables",
+      "court": "More about court practice analysis",
+      "translation": "More about drafting and translation"
+    },
+    "contract": {
+      "kicker": "Assistant · Contract risk scan",
+      "title": "Contract review and negotiation prep",
+      "situation": "A counterparty sends its draft of a supply agreement. Before the call you need to know which terms cannot be signed as they are, what to ask for instead and where you can give way.",
+      "steps": [
+        "Attach the draft to an Assistant chat: PDF, Word (.docx) or a scan.",
+        "Ask for a risk scan. AdiletAI switches to contract analysis and shows the mode it chose.",
+        "The scan applies your team’s practice profile: positions on key terms, deal-breakers and escalation rules, set up during onboarding.",
+        "Go through the risks and take the suggested redlines and fallback positions into the negotiation."
+      ],
+      "outputs": [
+        "A risk score and the deal-breakers to fix before signing",
+        "Risks ranked by severity, each with a quote from the contract and a recommendation",
+        "Suggested redlines and fallback positions where it proposes them"
+      ],
+      "note": "Scan reports are produced in Russian by default.",
+      "caption": "Illustration: a contract risk scan checked against the team’s practice profile, with a suggested redline and a fallback position. Sample contract; scan results are in Russian, as the product produces them."
+    },
+    "diligence": {
+      "kicker": "Vault · Review tables",
+      "title": "Due diligence and contract portfolio review",
+      "situation": "An acquisition, an audit or a renewal season: dozens of contracts, and the same facts are needed from each one. Parties, contract value, term, governing law, termination rights.",
+      "steps": [
+        "Create a vault for the deal and upload the documents: PDF, Word (.docx), Excel, Outlook e‑mails (.msg) and scans, up to 500 MB per file. Built-in OCR, tuned for Kazakh and Russian, makes scans searchable.",
+        "Create a review table. Each column is a question with an answer type: text, number, date, yes/no, currency or verbatim quote.",
+        "Run it. Cells fill in live, one row per document, and answers come with the source passages they were drawn from and a confidence score.",
+        "Edit or re-run any cell, then export the table."
+      ],
+      "outputs": [
+        "A table with one row per document and one column per question",
+        "The source passages behind the answers, to check before you rely on them",
+        "Export to Excel (XLSX) colour-coded by confidence, CSV, PDF, Word (DOCX) or plain text",
+        "Follow-up questions in the Assistant with the vault attached, answered with quoted passages from your documents"
+      ],
+      "caption": "Illustration: a review table filling in, with the source passages for one cell. Sample documents."
+    },
+    "litigation": {
+      "kicker": "Court practice analysis",
+      "title": "Litigation preparation",
+      "situation": "A supplier claims a late-payment penalty from your client or your company in court. Before the hearing you need to know how courts have treated similar disputes and what to prepare.",
+      "steps": [
+        "Describe the dispute in plain language. AdiletAI works out your side, plaintiff or defendant, and the dispute category.",
+        "Optionally connect the matter’s vault, so your case documents inform the research.",
+        "The analysis searches public Kazakhstan court and legal websites, with official sources ranked first, and runs in the background. You can close the tab.",
+        "Review the decisions, risks and checklist, then edit the memorandum and export it."
+      ],
+      "outputs": [
+        "A table of relevant decisions with the court, date, applied norms, the court’s legal position and a link to the source, where the source states them",
+        "Winning and losing patterns linked to the decisions they come from",
+        "A risk register where each risk cites its basis or is labelled a hypothesis, and a prioritised preparation checklist",
+        "A one-page summary for a partner and an editable memorandum. Before export to Markdown, HTML or plain text, every case number, norm and link is checked against the analysis’ own sources"
+      ],
+      "note": "Each analysis is private to the lawyer who created it. Analyses are produced in Russian.",
+      "risksCaption": "Illustration: the risk register, with one risk labelled a hypothesis, and the preparation checklist. Sample data.",
+      "memoCaption": "Illustration: exporting the memorandum after the citation check found no mismatches. Sample data."
+    },
+    "research": {
+      "kicker": "Assistant · Answers with citations",
+      "title": "Legal research for a memo",
+      "situation": "The finance director asks whether the uncapped penalty in a supply agreement can be reduced in court. The answer has to go into a memo, with the articles it rests on.",
+      "steps": [
+        "Ask the question in Kazakh, Russian or English and attach the contract it concerns.",
+        "For a complex question, the assistant first asks a few quick multiple-choice questions.",
+        "It searches a curated database of Kazakhstan’s codes and laws first, and the progress panel shows each search. When the database is not enough, it runs a web search that prioritises official sources such as adilet.zan.kz, gov.kz, akorda.kz and parlam.kz.",
+        "Open the Sources panel, check the acts and articles the answer relies on, and carry the conclusions into your memo."
+      ],
+      "outputs": [
+        "An answer in your language with numbered citations to the act and article it relied on",
+        "A Sources panel grouped into your documents, the knowledge base and the web",
+        "A note for the reviewing lawyer on what it could not verify, which the assistant is instructed to add"
+      ],
+      "note": "If the database has nothing relevant, the assistant is instructed to say so rather than answer from memory.",
+      "caption": "Illustration: the assistant answering a question about a contract penalty, with numbered citations and the Sources panel. Sample data; the product interface is in Russian.",
+      "chat": {
+        "question": "For a memo to our CFO: can a court reduce the uncapped penalty in clause 7.2 of the attached agreement, and does the supplier have to prove its losses?",
+        "answer": [
+          "The supplier does not have to prove its losses to claim a penalty[3]. At the debtor’s request, however, a court may reduce a penalty that is excessively high compared with the creditor’s losses, taking into account how far the obligation was performed[2].",
+          "Clause 7.2 sets a daily penalty with no overall cap[1], which supports a request for reduction. The reduction is at the court’s discretion, so the memo should not present it as certain."
+        ],
+        "noteTitle": "Note for the reviewing lawyer",
+        "note": "Check the current edition of Articles 293 and 297 of the Civil Code before the memo goes out."
+      }
+    },
+    "translation": {
+      "kicker": "Assistant · Translation",
+      "title": "Documents in Kazakh, Russian and English",
+      "situation": "A contract agreed in Russian needs a Kazakh version, or a foreign shareholder asks for it in English. Clause numbers, requisites and amounts have to match the original.",
+      "steps": [
+        "Attach the document to a chat: Word (.docx), PDF or a scan. Scans are read with built-in OCR, tuned for Kazakh and Russian.",
+        "Ask for a translation into Kazakh, Russian or English. AdiletAI switches to translation mode.",
+        "Compare the translation with the original before the document is signed or sent."
+      ],
+      "outputs": [
+        "A translation that keeps the structure, requisites and amounts of the original",
+        "Translation in any direction between Kazakh, Russian and English"
+      ],
+      "note": "If a file cannot be read, AdiletAI tells you instead of guessing.",
+      "caption": "Illustration: clause 4.2 of a sample lease in Kazakh, Russian and English, with the clause number kept. Sample text."
+    },
+    "tax": {
+      "kicker": "Assistant · Tax mode",
+      "title": "Tax questions",
+      "situation": "Finance asks which VAT rate applies to a supply, or how a payment is taxed. The tax team needs the rate and the article of the Tax Code it comes from.",
+      "steps": [
+        "Ask the Assistant the question in plain language.",
+        "AdiletAI recognises a tax question and switches to tax mode.",
+        "It takes rates and articles from the Tax Code in its legislation database and cites the article in the answer.",
+        "Check the article in the Sources panel before you rely on the answer."
+      ],
+      "outputs": [
+        "An answer with the rate and the Tax Code article it relied on",
+        "The cited article in the Sources panel, to compare the answer with the text of the code"
+      ],
+      "note": "Answers in tax mode are produced in Russian by default.",
+      "caption": "Illustration: a tax question answered in tax mode, with the Tax Code article in the Sources panel. Sample question; the answer is in Russian, as tax mode produces it by default, and the quote is from the Tax Code.",
+      "chat": {
+        "question": "Which VAT rate applies to our equipment supplies in 2026, and which article sets it?"
+      }
+    },
+    "faq": {
+      "title": "Common questions",
+      "items": [
+        {
+          "q": "What can AdiletAI do for an in-house legal team?",
+          "a": "It scans incoming contracts for risk against your team’s practice profile, turns a contract portfolio into a review table, answers legal questions with citations to Kazakhstan legislation, takes tax rates and articles from the Tax Code and translates documents between Kazakh, Russian and English. Output must be reviewed by a lawyer."
+        },
+        {
+          "q": "How can law firms use AdiletAI?",
+          "a": "A firm can keep a private vault for each client, deal or matter, run due diligence through review tables, and research court practice for a dispute to hand the partner a one-page summary and an editable memorandum. Answers in the Assistant cite the act and article they relied on."
+        },
+        {
+          "q": "Is AdiletAI useful for compliance and tax teams?",
+          "a": "Yes. Compliance teams can research requirements of Kazakhstan law with citations and use yes/no columns in review tables to see which contracts contain a given clause. Tax teams can ask questions in tax mode, which takes rates and articles from the Tax Code in the legislation database."
+        },
+        {
+          "q": "Does a lawyer still need to check the results?",
+          "a": "Yes. AdiletAI assists legal professionals, and its output must be reviewed by a lawyer. The assistant shows its sources and is instructed to add a note for the reviewing lawyer on what it could not verify. In court practice analysis, every case number, norm and link in the memorandum is checked against the analysis’ own sources before export."
+        },
+        {
+          "q": "In which language does AdiletAI work?",
+          "a": "Ask in Kazakh, Russian or English, and general answers come back in your language. Contract scans, drafts, tax-mode answers and court practice analyses are produced in Russian by default. The app interface is in Russian."
+        }
+      ]
+    },
+    "related": {
+      "title": "See also",
+      "features": "Platform: the four modules",
+      "howItWorks": "How it works",
+      "security": "Security and data handling",
+      "faq": "All questions and answers"
+    },
+    "cta": {
+      "title": "Bring one of these tasks to the demo",
+      "text": "We show the workflow on a task like yours, then set up access and your practice profile during onboarding."
+    }
+  }
+}

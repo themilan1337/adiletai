@@ -1,0 +1,37 @@
+{
+  "postYuridicheskiyIiPomoshnik": {
+    "meta": {
+      "title": "Legal AI assistant: what it is and how to choose one",
+      "description": "What a legal AI assistant is, how retrieval and citations work, how to evaluate a tool for Kazakhstan law, and the limitations legal teams should plan for.",
+      "excerpt": "A plain guide for legal teams in Kazakhstan: what a legal AI assistant does, how it finds and cites sources, and five things to check before you choose one."
+    },
+    "title": "Legal AI assistant: what it is and how legal teams in Kazakhstan use it",
+    "lead": "A plain guide to how these tools find and cite the law, what to check before you choose one, and where their limits are.",
+    "breadcrumb": "Legal AI assistant",
+    "takeaways": {
+      "title": "Key takeaways",
+      "items": [
+        "A legal AI assistant is a language model connected to a search over legal sources. It finds the relevant norms and passages first, then writes its answer from them and cites them.",
+        "Legal teams use it for research questions, contract review, questions across their own documents, first drafts and translation.",
+        "Citations let you check an answer. They do not make it correct, so a lawyer still reviews the output.",
+        "Before choosing a tool, test five things: coverage of Kazakhstan law, sources you can open, data handling and sub-processors, languages, and the review workflow."
+      ]
+    },
+    "sections": {
+      "what": "What a legal AI assistant is",
+      "tasks": "What it does for a legal team",
+      "rag": "How retrieval and citations work",
+      "evaluate": "How to evaluate a legal AI tool",
+      "limits": "Limitations to plan for",
+      "adiletai": "Where AdiletAI fits",
+      "sources": "Sources"
+    },
+    "figure": {
+      "caption": "Illustration: the AdiletAI Assistant answers a question about an uncapped contract penalty, with numbered citations to clause 7.2 of the attached contract and two Civil Code articles. Sample data; the product interface is in Russian."
+    },
+    "cta": {
+      "title": "Test it on your own question",
+      "text": "Bring a real question and a contract to the demo. We show how the Assistant searches, cites and flags what it could not verify, then set up access with assisted onboarding."
+    }
+  }
+}

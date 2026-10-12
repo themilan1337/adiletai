@@ -1,0 +1,144 @@
+{
+  "faq": {
+    "meta": {
+      "title": "Legal AI FAQ for Kazakhstan: accuracy, sources, data",
+      "description": "Can you trust legal AI? How AdiletAI differs from ChatGPT for Kazakhstan law, which sources it cites, where data is processed, languages and access."
+    },
+    "hero": {
+      "title": "Questions about AdiletAI",
+      "lead": "Direct answers on what AdiletAI does, where its answers come from, how your data is handled and how your team gets access."
+    },
+    "nav": {
+      "label": "Categories"
+    },
+    "contact": {
+      "lead": "Didn’t find your question?",
+      "label": "Write to us"
+    },
+    "categories": [
+      {
+        "title": "Product",
+        "link": "Explore the platform",
+        "items": [
+          {
+            "q": "What is AdiletAI?",
+            "a": "AdiletAI is a legal AI platform for in-house legal teams and law firms in Kazakhstan. It answers legal questions with citations to Kazakhstan legislation, reviews contracts for risk and turns document sets into structured review tables, working with documents in Kazakh, Russian and English. The platform has four modules: the Assistant, Vault, review tables and court practice analysis."
+          },
+          {
+            "q": "How is AdiletAI different from ChatGPT?",
+            "a": "AdiletAI is built for legal work under Kazakhstan law, while ChatGPT is a general-purpose assistant. The AdiletAI Assistant searches a curated database of Kazakhstan’s codes and laws first, cites the act and article it relied on, and is instructed to rely on Kazakhstan law rather than Russian Federation law. The platform also keeps your documents in private vaults, turns document sets into review tables and analyses court practice for a dispute."
+          },
+          {
+            "q": "Does AdiletAI provide legal advice?",
+            "a": "No. AdiletAI is a tool for legal professionals and does not provide legal advice. Its output must be reviewed by a lawyer before anyone relies on it."
+          },
+          {
+            "q": "Can AI replace a lawyer?",
+            "a": "No. AdiletAI helps lawyers with research, contract risk review and document review, and the lawyer makes the final call. In substantive analyses, the assistant is instructed to add a note for the reviewing lawyer on what it could not verify."
+          },
+          {
+            "q": "Which file formats does AdiletAI work with?",
+            "a": "AdiletAI works with PDF, Word (.docx), Excel, PowerPoint (.pptx), Outlook e‑mails (.msg), images and scans. You can attach up to 100 files to a chat, and a vault takes files of up to 500 MB each. Built-in OCR makes scans readable and is tuned for Kazakh and Russian. If a file cannot be read, AdiletAI tells you instead of guessing. Save older .doc files as .docx first."
+          }
+        ]
+      },
+      {
+        "title": "Accuracy and sources",
+        "link": "How an answer is grounded",
+        "items": [
+          {
+            "q": "Can we trust AdiletAI’s answers?",
+            "a": "Treat them as sourced research for a lawyer to check, not as a final legal opinion. Each answer lists the sources it drew on in a Sources panel, and the assistant cites the act and article it relied on, with the edition date when available. Like any AI system, it can make mistakes, so output must be reviewed by a lawyer."
+          },
+          {
+            "q": "Can AdiletAI be wrong, and how do we check an answer?",
+            "a": "Yes, AdiletAI can be wrong, so check an answer before you rely on it. Click a numbered citation such as [1] to open the Sources panel, read the articles and passages listed there and confirm that they support the answer. In substantive analyses, the assistant is instructed to add a note for the reviewing lawyer on what it could not verify. If its database has nothing relevant, it is instructed to say so rather than answer from memory."
+          },
+          {
+            "q": "What sources does AdiletAI use?",
+            "a": "The Assistant searches a curated database of Kazakhstan’s codes and laws first. When the database is not enough, it runs a web search that prioritises official sources such as adilet.zan.kz, gov.kz, akorda.kz and parlam.kz. For matters of the Astana International Financial Centre (AIFC) it also prioritises aifc.kz and iac.kz. Other sites can also appear in the results. When you attach files or connect a vault, it draws on your own documents as well. The Sources panel groups what it used into Documents, Knowledge base and Web. Court practice analysis works differently: it searches public Kazakhstan court and legal websites, with official sources ranked first."
+          },
+          {
+            "q": "Does AdiletAI know Kazakhstan court practice?",
+            "a": "AdiletAI researches court practice for a specific dispute, in a separate module: court practice analysis. The Assistant’s legislation database holds codes and laws, not court decisions. Describe a dispute in plain language, and AdiletAI searches public Kazakhstan court and legal websites, ranking official sources first. It builds a table of relevant decisions with the court, date, applied norms and the court’s legal position where the source states them, and a link to each source. The search covers public websites, not a complete database of court decisions, and the analysis is produced in Russian."
+          },
+          {
+            "q": "Does AdiletAI apply Kazakhstan law or Russian law?",
+            "a": "AdiletAI is instructed to rely on Kazakhstan law, not Russian Federation law. The assistant searches its database of Kazakhstan’s codes and laws before anything else. Tax questions switch it to a Kazakhstan tax mode that takes rates and articles from the Tax Code in that database."
+          }
+        ]
+      },
+      {
+        "title": "Data and security",
+        "link": "Read about security",
+        "items": [
+          {
+            "q": "Where is our data processed?",
+            "a": "AdiletAI uses third-party AI model and search providers, and some of them process data outside Kazakhstan. The current list of sub-processors is available on request, and we walk your security team through the data flow before rollout. If you need a dedicated deployment or special data-residency terms, talk to us."
+          },
+          {
+            "q": "Can colleagues see my documents and chats?",
+            "a": "No. Vaults, chats and court practice analyses are private to your account. You can delete documents, vaults and chats at any time."
+          },
+          {
+            "q": "What happens to personal data in our messages?",
+            "a": "Personal identifiers in your typed messages (IIN, BIN, IBAN, phone numbers, e‑mail addresses and, on a best-effort basis, personal names) are pseudonymised before the message reaches the AI model and restored in the answer. Names are detected automatically, so some may be missed. Pseudonymisation does not cover the text of attached documents or document text indexed for search. Nor does it cover the web-search queries that court practice analysis builds from your dispute description and sends to its search provider."
+          },
+          {
+            "q": "How are uploaded files protected?",
+            "a": "The original files you upload are encrypted at rest and served only through authenticated downloads, and connections to AdiletAI use TLS 1.2/1.3. Sign-in goes through AdiletAI’s own identity provider (OpenID Connect with PKCE). Access tokens stay on the server, never in the browser: the browser holds only an encrypted, HttpOnly session cookie. You can also turn on two-factor authentication with an authenticator app (TOTP)."
+          }
+        ]
+      },
+      {
+        "title": "Languages",
+        "items": [
+          {
+            "q": "Which languages does AdiletAI work in?",
+            "a": "AdiletAI works with questions and documents in Kazakh, Russian and English. Ask in any of the three, and general answers come back in your language. Contract scans, drafts, tax-mode answers and court practice analyses are produced in Russian by default. Built-in OCR is tuned for Kazakh and Russian, and the legislation database is in Russian."
+          },
+          {
+            "q": "What language is the AdiletAI interface in?",
+            "a": "The app interface is in Russian. You can still ask questions and work with documents in Kazakh, Russian or English."
+          },
+          {
+            "q": "Can AdiletAI translate legal documents?",
+            "a": "Yes. The assistant translates documents between Kazakh, Russian and English and keeps their structure, requisites and amounts intact. As with any output, have a lawyer review the translation before it is used."
+          }
+        ]
+      },
+      {
+        "title": "Access, onboarding and pricing",
+        "link": "Contact the team",
+        "items": [
+          {
+            "q": "How do we get access to AdiletAI?",
+            "a": "Book a demo. Access is by invitation with assisted onboarding: we walk your team through the product, set up access and configure your practice profile, with your positions on key terms, deal-breakers, escalation rules and house style. Existing customers sign in at business.adiletai.com."
+          },
+          {
+            "q": "How much does AdiletAI cost?",
+            "a": "Pricing is arranged with our team: usage is metered in credits, and the plan is agreed with you. We don’t publish a price list, so book a demo or write to support{'@'}adiletai.com to discuss a plan."
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "link": "About AdiletAI",
+        "items": [
+          {
+            "q": "Is AdiletAI part of the Ministry of Justice’s Әділет system?",
+            "a": "No. AdiletAI is an independent company and is not affiliated with the Ministry of Justice’s “Әділет” legal information system (adilet.zan.kz). “Әділет” means “justice” in Kazakh. adilet.zan.kz is one of the official sources the assistant gives priority to."
+          },
+          {
+            "q": "Who is behind AdiletAI?",
+            "a": "AdiletAI was founded in Shymkent, Kazakhstan, by Nariman Erkhan, Nursultan Mukhtaruly and Milan Gorislavets. You can reach the team at support{'@'}adiletai.com."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Bring your own question to a demo",
+      "text": "We walk your team through the Assistant, Vault, review tables and court practice analysis, and answer whatever this page leaves open."
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "features": {
+    "meta": {
+      "title": "AI contract review and legal research under Kazakhstan law",
+      "description": "AdiletAI in detail: an Assistant that cites Kazakhstan legislation, AI contract review, private vaults, review tables and court practice analysis."
+    },
+    "hero": {
+      "title": "AI contract review and legal research under Kazakhstan law",
+      "lead": "An Assistant that cites Kazakhstan legislation, contract risk review, vaults, review tables and court practice analysis, in one platform."
+    },
+    "inApp": "In the app",
+    "nav": {
+      "label": "Platform modules",
+      "assistant": "Assistant",
+      "contractReview": "Contract review",
+      "vault": "Vault",
+      "reviewTables": "Review tables",
+      "courtPractice": "Court practice",
+      "drafting": "Drafting and translation",
+      "playbook": "Practice profile",
+      "kazakhstan": "Built for Kazakhstan"
+    },
+    "assistant": {
+      "name": "Assistant",
+      "title": "Legal research that cites Kazakhstan law",
+      "lead": "The Assistant is a research chat for work under Kazakhstan law. It searches a curated database of Kazakhstan’s codes and laws first and cites the act and article it relied on, with the edition date when available.",
+      "specs": [
+        {
+          "label": "Sources",
+          "value": "The legislation database first. When it is not enough, a web search that prioritises official sources such as adilet.zan.kz, gov.kz, akorda.kz and parlam.kz, and aifc.kz and iac.kz for AIFC matters. Other sites can also appear."
+        },
+        {
+          "label": "Citations",
+          "value": "Numbered markers such as [1] and [2] open a Sources panel grouped into Documents, Knowledge base and Web."
+        },
+        {
+          "label": "Progress",
+          "value": "Answers stream live, and a progress panel shows which searches it ran in legislation and in your documents."
+        },
+        {
+          "label": "Languages",
+          "value": "Ask in Kazakh, Russian or English, and general answers come back in your language."
+        }
+      ],
+      "note": "If the database has nothing relevant, the assistant is instructed to say so rather than answer from memory. Output must be reviewed by a lawyer.",
+      "link": "How an answer is grounded",
+      "caption": "Illustration: the assistant answering a question about a penalty clause, with the Sources panel open. Sample data; the product interface is in Russian.",
+      "chat": {
+        "question": "Clause 7.2 of the attached contract sets a daily penalty with no cap. Can a court reduce it, and does the supplier have to prove its losses?",
+        "answer": [
+          "Clause 7.2 does set a daily penalty with no upper limit[1]. A court may reduce a penalty that is excessively high compared with the supplier’s losses, if you ask it to[2].",
+          "The supplier does not have to prove any losses to claim the penalty[3]. If the contract is not signed yet, it is safer to agree a cap now, for example the value of the unpaid goods."
+        ],
+        "noteTitle": "Note for the reviewing lawyer",
+        "note": "Whether a court reduces a penalty depends on the facts of the case. Check recent court practice before relying on that argument."
+      },
+      "modes": {
+        "title": "The right mode for the task",
+        "text": "It recognises a general question, tax, contract analysis, drafting or translation, and shows the mode it chose as a badge.",
+        "prompt": "Translate the attached power of attorney into Kazakh.",
+        "alt": "Illustration: a request to translate a power of attorney into Kazakh, and the mode badges with Translation highlighted as the chosen mode."
+      },
+      "questions": {
+        "title": "Clarifying questions first",
+        "text": "For complex tasks it asks a few quick multiple-choice questions before it starts.",
+        "alt": "Illustration: a clarifying question about your side in a supply contract, with three options."
+      },
+      "files": {
+        "title": "Up to 100 files per chat",
+        "text": "PDF, Word (.docx), Excel, PowerPoint (.pptx), Outlook e‑mails (.msg), images and scans. If a file cannot be read, it tells you instead of guessing.",
+        "alt": "Illustration: the message field with five attached files: a contract in PDF, a Word document, an Excel specification, an Outlook e-mail and a scanned power of attorney."
+      }
+    },
+    "contractReview": {
+      "name": "Contract review",
+      "title": "AI contract review with a risk report",
+      "lead": "Attach a contract to an Assistant chat and ask for a risk scan. You get a structured report with a risk score, deal-breakers and risks ranked by severity.",
+      "points": [
+        "A risk score and the deal-breakers at the top of the report",
+        "Risks ranked by severity, each with a quote from the contract and a recommendation",
+        "Suggested redlines and fallback positions, where it proposes them",
+        "Your team’s practice profile applied when one is set up",
+        "The report is produced in Russian by default"
+      ],
+      "link": "How the practice profile shapes a scan",
+      "caption": "Illustration: a contract risk scan inside an Assistant chat. Sample contract; scan results are in Russian, as the product produces them."
+    },
+    "vault": {
+      "name": "Vault",
+      "title": "A private vault for every matter",
+      "lead": "A vault is a private document workspace: keep one per deal, client or matter, and attach it to a chat to get answers grounded in your own documents.",
+      "specs": [
+        {
+          "label": "File size",
+          "value": "Up to 500 MB per file, with nested folders and bulk upload"
+        },
+        {
+          "label": "Formats",
+          "value": "PDF, Word (.docx), Excel, PowerPoint (.pptx), Outlook e‑mails (.msg), images and scans"
+        },
+        {
+          "label": "OCR",
+          "value": "Built-in OCR makes scanned PDFs and photographed documents searchable and is tuned for Kazakh and Russian. Processing runs in the background and retries automatically."
+        },
+        {
+          "label": "Preview",
+          "value": "PDFs, images and PowerPoint slides open inside the workspace"
+        },
+        {
+          "label": "Search",
+          "value": "By meaning, not keywords: it finds the most relevant passages across the vault"
+        },
+        {
+          "label": "In a chat",
+          "value": "Attach one or more vaults to an Assistant chat, and the answer shows the passages it quoted"
+        },
+        {
+          "label": "Access",
+          "value": "Private to your account. You can delete documents and vaults at any time."
+        }
+      ],
+      "link": "How uploaded files are protected",
+      "caption": "Illustration: a vault with folders and files in several formats, with a Kazakh-language scan open in the preview. Sample files."
+    },
+    "reviewTables": {
+      "name": "Review tables",
+      "title": "One row per document, one column per question",
+      "lead": "A review table turns a set of documents into one table. Ask the same questions of every document, such as parties, contract value, term, governing law or termination rights, and the cells fill in live.",
+      "typesLabel": "Six answer types",
+      "types": [
+        "Text",
+        "Number",
+        "Date",
+        "Yes/No",
+        "Currency",
+        "Verbatim quote"
+      ],
+      "exportLabel": "Export formats",
+      "exports": [
+        "Excel (XLSX)",
+        "CSV",
+        "PDF",
+        "Word (DOCX)",
+        "Plain text (TXT)"
+      ],
+      "points": [
+        "Every answer comes with the source passages it was drawn from",
+        "A confidence score per cell, in the detail panel and as colour-coding in the Excel export",
+        "Edit or re-run any cell"
+      ],
+      "link": "Use cases for legal teams",
+      "caption": "Illustration: a review table filling in, with the source passages for one cell. Sample documents."
+    },
+    "courtPractice": {
+      "name": "Court practice analysis",
+      "title": "Court practice for your dispute",
+      "lead": "Describe a dispute in plain language. AdiletAI works out your side (plaintiff or defendant) and the dispute category, searches public Kazakhstan court and legal websites with official sources ranked first, and builds a table of relevant decisions.",
+      "steps": [
+        {
+          "title": "Describe the dispute",
+          "text": "In plain language. Optionally connect a vault, so your case documents inform the research."
+        },
+        {
+          "title": "Review the decisions",
+          "text": "Court, date, applied norms, the court’s legal position and a link to the source, where the source states them."
+        },
+        {
+          "title": "Weigh the risks",
+          "text": "Winning and losing patterns linked to their decisions, a risk register where each risk cites its basis or is labelled a hypothesis, and a prioritised preparation checklist."
+        },
+        {
+          "title": "Prepare the memorandum",
+          "text": "A one-page summary for a partner, and an auto-assembled memorandum that you can edit and export as Markdown, HTML or plain text."
+        }
+      ],
+      "check": "Before export, every case number, norm and link in the memorandum is checked against the analysis’ own source list, and mismatches are flagged.",
+      "background": "Runs in the background, so you can close the tab. Each analysis is private to the lawyer who created it, outcomes can be recorded later, and output is in Russian.",
+      "caption": "Illustration: relevant decisions in a court practice analysis. Sample data, not real cases; analyses are produced in Russian.",
+      "risksCaption": "Illustration: the risk register, with one risk labelled a hypothesis, and the preparation checklist. Sample data.",
+      "memoCaption": "Illustration: exporting the memorandum after the citation check found no mismatches. Sample data."
+    },
+    "drafting": {
+      "name": "Drafting and translation",
+      "title": "First drafts and translation",
+      "lead": "Two more modes of the Assistant: an editable first draft to start from, and translation between Kazakh, Russian and English.",
+      "draft": {
+        "title": "Drafting",
+        "beta": "beta",
+        "text": "Ask for a contract, claim, letter or power of attorney, and an editable first draft opens in a panel next to the chat. Drafts are produced in Russian by default.",
+        "prompt": "Draft a letter to the supplier proposing a cap on the penalty in clause 7.2.",
+        "alt": "Illustration: a draft letter to the supplier in the panel next to the chat. The draft is in Russian, as the product produces it."
+      },
+      "translation": {
+        "title": "Translation",
+        "text": "Translate documents between Kazakh, Russian and English. The translation keeps the structure, requisites and amounts intact.",
+        "alt": "Illustration: clause 4.2 of a sample lease in Kazakh, Russian and English, with the clause number kept."
+      },
+      "link": "Questions about languages"
+    },
+    "playbook": {
+      "name": "Practice profile",
+      "title": "Your team’s practice profile",
+      "lead": "The practice profile is your team’s playbook. The Assistant and the contract scan apply it, and we set it up with you during onboarding.",
+      "items": [
+        {
+          "title": "Positions on key terms",
+          "text": "Where your team stands on terms such as liability, penalties and termination."
+        },
+        {
+          "title": "Deal-breakers",
+          "text": "Terms your team does not accept without changes."
+        },
+        {
+          "title": "Escalation rules",
+          "text": "Who approves which amounts and risks."
+        },
+        {
+          "title": "House style",
+          "text": "How your team works, for example the tone of suggested edits and the language of documents."
+        }
+      ],
+      "badge": "When a contract scan applies the profile, the report is marked as checked against the team playbook.",
+      "caption": "Illustration: a practice profile with the team’s positions, deal-breakers, escalation rules and house style. Sample data; the product interface is in Russian."
+    },
+    "kazakhstan": {
+      "title": "Built for Kazakhstan.",
+      "continuation": "Its law, its official sources and three languages",
+      "law": {
+        "title": "Kazakhstan law first",
+        "body": "The Assistant is instructed to rely on Kazakhstan law, not Russian Federation law. Tax questions switch to a tax mode that takes rates and articles from the Tax Code in its legislation database."
+      },
+      "sources": {
+        "title": "Priority for official sources",
+        "body": "When the legislation database is not enough, the assistant runs a web search that prioritises official sources. For Astana International Financial Centre (AIFC) matters it also prioritises aifc.kz and iac.kz. Other sites can also appear in the results.",
+        "official": "Official portals",
+        "aifc": "AIFC matters"
+      },
+      "documents": {
+        "title": "Documents in three languages",
+        "body": "Work with documents in Kazakh, Russian and English. Built-in OCR is tuned for Kazakh and Russian, and translation keeps structure, requisites and amounts intact."
+      },
+      "languages": {
+        "title": "Languages at a glance",
+        "rows": [
+          {
+            "label": "Questions and general answers",
+            "value": "Kazakh, Russian or English: the answer comes in the language of the question"
+          },
+          {
+            "label": "OCR for scans",
+            "value": "Tuned for Kazakh and Russian"
+          },
+          {
+            "label": "Translation",
+            "value": "Between Kazakh, Russian and English"
+          },
+          {
+            "label": "Contract scans, drafts, tax-mode answers and court practice analyses",
+            "value": "Russian by default"
+          },
+          {
+            "label": "Legislation database",
+            "value": "Russian-language"
+          },
+          {
+            "label": "Product interface",
+            "value": "Russian"
+          }
+        ]
+      }
+    },
+    "faq": {
+      "title": "Platform questions",
+      "items": [
+        {
+          "q": "Which files can AdiletAI read?",
+          "a": "PDF, Word (.docx), Excel, PowerPoint (.pptx), Outlook e‑mails (.msg), images and scans. You can attach up to 100 files to an Assistant chat, and a vault takes files of up to 500 MB each. Built-in OCR makes scans readable and is tuned for Kazakh and Russian. If a file cannot be read, AdiletAI tells you instead of guessing."
+        },
+        {
+          "q": "Which formats can we export?",
+          "a": "Review tables export to Excel (XLSX), CSV, PDF, Word (DOCX) and plain text. A court practice memorandum exports as Markdown, HTML or plain text."
+        },
+        {
+          "q": "Does AdiletAI check its own citations?",
+          "a": "The Assistant lists the sources it drew on in a Sources panel, so the reviewing lawyer can check them. The only automatic check is in court practice analysis: before a memorandum is exported, every case number, norm and link in it is checked against the analysis’ own source list, and mismatches are flagged. Output must be reviewed by a lawyer."
+        },
+        {
+          "q": "Which languages does AdiletAI work in?",
+          "a": "Ask in Kazakh, Russian or English, and general answers come back in your language. Documents can be translated between all three, and built-in OCR is tuned for Kazakh and Russian. Contract scans, drafts, tax-mode answers and court practice analyses are produced in Russian by default, the legislation database is Russian-language, and the app interface is in Russian."
+        },
+        {
+          "q": "Who can see our vaults, chats and analyses?",
+          "a": "Vaults, chats and analyses are private to your account, and you can delete documents, vaults and chats at any time. Each court practice analysis is private to the lawyer who created it."
+        }
+      ]
+    },
+    "cta": {
+      "title": "See the platform on a matter like yours",
+      "text": "Book a demo and we walk your team through every module, then set up access and your practice profile during onboarding."
+    }
+  }
+}

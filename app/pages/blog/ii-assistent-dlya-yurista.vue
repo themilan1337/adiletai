@@ -1,136 +1,120 @@
-<template>
-  <article class="container mx-auto px-4 sm:px-6 max-w-4xl">
-    <!-- Breadcrumbs -->
-    <nav class="flex mb-8 text-sm text-zinc-500" aria-label="Breadcrumb">
-      <ol class="flex items-center space-x-2">
-        <li><NuxtLink to="/" class="hover:text-zinc-900 transition-colors">Главная</NuxtLink></li>
-        <li class="flex items-center space-x-2">
-          <span class="text-zinc-300">/</span>
-          <NuxtLink to="/blog" class="hover:text-zinc-900 transition-colors">Блог</NuxtLink>
-        </li>
-        <li class="flex items-center space-x-2">
-          <span class="text-zinc-300">/</span>
-          <span class="font-medium text-zinc-900">ИИ ассистент для юриста</span>
-        </li>
-      </ol>
-    </nav>
-
-    <!-- Header -->
-    <header class="mb-12">
-      <div class="flex items-center gap-4 mb-6">
-        <span class="px-3 py-1 bg-zinc-100 text-zinc-600 text-xs font-bold uppercase tracking-wider rounded-full">Продуктивность</span>
-        <time datetime="2025-02-03" class="text-sm text-zinc-500">3 февраля 2026</time>
-      </div>
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-900 mb-8 leading-tight tracking-tight gs">
-        ИИ ассистент для юриста: Твой новый супергерой в офисе
-      </h1>
-      <p class="text-xl text-zinc-600 leading-relaxed mb-10 italic">
-        Забудьте про бесконечный поиск по папкам и проверку ссылок вручную. Современный ИИ ассистент для юриста берет на себя всю рутину, оставляя вам время для творчества и стратегии.
-      </p>
-      <div class="flex items-center gap-4 border-y border-zinc-100 py-6">
-        <div class="w-12 h-12 rounded-full bg-zinc-200 flex items-center justify-center text-xl">🚀</div>
-        <div>
-          <div class="font-bold text-zinc-900">Блог AdiletAI</div>
-          <div class="text-sm text-zinc-500">Гайд по продуктивности</div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Content -->
-    <div class="prose prose-lg max-w-none text-zinc-800 leading-relaxed space-y-8">
-      <p>
-        Работа юриста часто ассоциируется с кипами бумаг, многочасовым поиском судебной практики и бесконечными правками договоров. Однако технологии не стоят на месте. Сегодня <strong>ИИ ассистент для юриста</strong> становится таким же привычным инструментом, как электронная почта или Word.
-      </p>
-
-      <h2 class="text-3xl font-bold text-zinc-900 mt-12 mb-6 gs">Как ИИ ассистент для юриста экономит ваше время?</h2>
-      <p>
-        Представьте, что у вас есть стажер, который никогда не спит, помнит все законы РК и может прочитать 100-страничный документ за секунды. Это и есть <strong>ИИ ассистент для юриста</strong>. Вот основные сценарии его использования:
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
-        <div class="p-6 bg-zinc-50 rounded-2xl border border-zinc-200">
-          <h3 class="text-xl font-bold text-zinc-900 mb-3 gs">1. Мгновенный поиск</h3>
-          <p class="text-sm">Поиск по всей базе законодательства Казахстана. Больше не нужно переключаться между вкладками "Адилет" и "Параграф".</p>
-        </div>
-        <div class="p-6 bg-zinc-50 rounded-2xl border border-zinc-200">
-          <h3 class="text-xl font-bold text-zinc-900 mb-3 gs">2. Анализ договоров</h3>
-          <p class="text-sm">ИИ выделит ключевые обязательства, сроки и штрафные санкции, а также подскажет, какие пункты противоречат интересам вашей компании.</p>
-        </div>
-        <div class="p-6 bg-zinc-50 rounded-2xl border border-zinc-200">
-          <h3 class="text-xl font-bold text-zinc-900 mb-3 gs">3. Генерация документов</h3>
-          <p class="text-sm">Создание типовых исков, претензий и уведомлений на основе краткого описания ситуации и предоставленных фактов.</p>
-        </div>
-        <div class="p-6 bg-zinc-50 rounded-2xl border border-zinc-200">
-          <h3 class="text-xl font-bold text-zinc-900 mb-3 gs">4. Подбор практики</h3>
-          <p class="text-sm">Автоматический подбор релевантных судебных решений по аналогичным делам в РК.</p>
-        </div>
-      </div>
-
-      <h2 class="text-3xl font-bold text-zinc-900 mt-12 mb-6 gs">Безопасность и конфиденциальность</h2>
-      <p>
-        Главный вопрос, который волнует профессионалов: "Безопасно ли передавать данные клиента ИИ?". Ответ зависит от выбора инструмента. Профессиональный <strong>ИИ ассистент для юриста</strong>, такой как AdiletAI, обеспечивает сквозное шифрование и гарантирует, что ваши данные не используются для обучения публичных моделей.
-      </p>
-
-      <h2 class="text-3xl font-bold text-zinc-900 mt-12 mb-6 gs">Почему AdiletAI — лучший выбор в Казахстане?</h2>
-      <p>
-        В отличие от зарубежных аналогов, AdiletAI "понимает" менталитет и специфику казахстанского права. Это не просто переводчик, а глубоко интегрированный <strong>ИИ ассистент для юриста</strong>, который знает разницу между нормативным постановлением Верховного суда и законом.
-      </p>
-
-      <h2 class="text-3xl font-bold text-zinc-900 mt-12 mb-6 gs">С чего начать?</h2>
-      <p>
-        Начните с малого. Доверьте ИИ проверку простого договора аренды или попросите составить список необходимых документов для регистрации ТОО. Вы удивитесь, насколько качественнее и спокойнее станет ваша работа.
-      </p>
-    </div>
-
-    <!-- Tags -->
-    <div class="mt-16 pt-8 border-t border-zinc-100 flex flex-wrap gap-2">
-      <span class="px-3 py-1 bg-zinc-50 text-zinc-600 text-sm rounded-md border border-zinc-200">#Productivity</span>
-      <span class="px-3 py-1 bg-zinc-50 text-zinc-600 text-sm rounded-md border border-zinc-200">#AI_Assistant</span>
-      <span class="px-3 py-1 bg-zinc-50 text-zinc-600 text-sm rounded-md border border-zinc-200">#LawyerLife</span>
-      <span class="px-3 py-1 bg-zinc-50 text-zinc-600 text-sm rounded-md border border-zinc-200">#AdiletAI</span>
-    </div>
-  </article>
-</template>
-
 <script setup lang="ts">
-definePageMeta({
-  layout: 'blog'
-})
+// Blog post /blog/ii-assistent-dlya-yurista ("AI assistant for lawyers"). The long-form body is one plain SFC per locale
+// (components/content/blog/ii-assistent-dlya-yurista/<locale>.vue, i18n-tech.md section 7). Section headings and ids come
+// from postIiAssistentDlyaYurista.toc, shared by the body and the table of contents. Every product statement maps to
+// claims.md. Dates come from BLOG_POSTS; bump dateModified there when any of the three bodies changes.
+// JSON-LD: BlogPosting here, BreadcrumbList from <Breadcrumbs>.
+const SLUG = 'ii-assistent-dlya-yurista'
+const NS = 'postIiAssistentDlyaYurista'
+const post = BLOG_POSTS.find(p => p.slug === SLUG)!
+// Order = order of the H2 sections in every body.
+const SECTIONS = ['research', 'contracts', 'tables', 'disputes', 'translation', 'verification', 'data', 'start'] as const
+const READING_TIME = 7 // minutes; the bodies run 1,200-1,600 words in every locale
+
+const bodies: Record<string, Component> = {
+  en: defineAsyncComponent(() => import('~/components/content/blog/ii-assistent-dlya-yurista/en.vue')),
+  ru: defineAsyncComponent(() => import('~/components/content/blog/ii-assistent-dlya-yurista/ru.vue')),
+  kk: defineAsyncComponent(() => import('~/components/content/blog/ii-assistent-dlya-yurista/kk.vue')),
+}
+
+const { t, locale } = useI18n()
+const site = useSiteConfig()
+const toc = computed(() => SECTIONS.map(id => ({ id, label: t(`${NS}.toc.${id}`) })))
 
 useSeoMeta({
-  title: 'ИИ ассистент для юриста: Как повысить эффективность в 10 раз | AdiletAI',
-  description: 'Как использовать ИИ ассистент для юриста в ежедневной практике. Автоматизация поиска, анализа и создания документов в Казахстане.',
-  keywords: 'ии ассистент для юриста, нейросеть для юриста, автоматизация юридической практики казахстан, виртуальный помощник юриста, adiletai',
-  
-  ogTitle: 'ИИ ассистент для юриста: Перестаньте бояться технологий',
-  ogDescription: 'Полный гид по внедрению ИИ ассистента в юридическую компанию. Кейсы и инструменты.',
+  title: () => t(`${NS}.meta.title`),
+  description: () => t(`${NS}.meta.description`),
+  ogTitle: () => t(`${NS}.meta.title`),
+  ogDescription: () => t(`${NS}.meta.description`),
+  twitterTitle: () => t(`${NS}.meta.title`),
+  twitterDescription: () => t(`${NS}.meta.description`),
   ogType: 'article',
-  ogUrl: 'https://adiletai.com/blog/ii-assistent-dlya-yurista',
-  articlePublishedTime: '2026-02-03T11:00:00Z',
-  articleAuthor: ['AdiletAI Team'],
-  articleTag: ['Productivity', 'Lawyer', 'AI']
+  articlePublishedTime: post.datePublished,
+  articleModifiedTime: post.dateModified,
 })
 
-useHead({
-  link: [
-    { rel: 'canonical', href: 'https://adiletai.com/blog/ii-assistent-dlya-yurista' }
-  ]
-})
-
-useSchemaOrg([
-  defineArticle({
-    headline: 'ИИ ассистент для юриста: Твой новый супергерой в офисе',
-    description: 'Как использовать ИИ ассистент для юриста в ежедневной практике.',
-    datePublished: '2026-02-03',
-    author: [
-      { name: 'AdiletAI Team' }
-    ]
-  })
-])
+useSchemaOrg([{
+  '@type': 'BlogPosting',
+  'headline': () => t(`${NS}.meta.title`), // the H1 carries display-only U+00A0 / U+2011
+  'description': () => t(`${NS}.meta.description`),
+  'image': () => `${site.url}/og/${locale.value}.png`,
+  'datePublished': post.datePublished,
+  'dateModified': post.dateModified,
+  'author': { '@id': `${site.url}/#organization` },
+  'publisher': { '@id': `${site.url}/#organization` },
+}])
 </script>
 
+<template>
+  <div>
+    <div class="mx-auto max-w-page px-4 pt-10 pb-20 sm:px-6 md:pt-16 md:pb-28">
+      <Breadcrumbs :items="[{ label: t('common.nav.blog'), to: '/blog' }, { label: t(`${NS}.breadcrumb`) }]" class="mb-10 md:mb-14" />
+
+      <!-- Phones and tablets: header, contents, body in one 40rem column (figures and contents align with the text).
+           lg: body column on the left, sticky contents on the right. -->
+      <article class="max-w-copy lg:grid lg:max-w-none lg:grid-cols-[minmax(0,40rem)_minmax(0,15rem)] lg:justify-between lg:gap-x-16">
+        <ArticleHeader
+          class="lg:col-start-1 lg:row-start-1"
+          :title="t(`${NS}.title`)"
+          :description="t(`${NS}.lead`)"
+          :author="t('blog.post.author')"
+          :published="post.datePublished"
+          :updated="post.dateModified"
+          :reading-time="READING_TIME"
+        />
+
+        <aside class="mt-10 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-2">
+          <ContentBlogPostToc :items="toc" />
+        </aside>
+
+        <div class="min-w-0 lg:col-start-1 lg:row-start-2">
+          <div class="post-body mt-12 md:mt-14">
+            <component :is="bodies[locale]" />
+          </div>
+
+          <ContentBlogPostRelated :slug="SLUG" />
+        </div>
+      </article>
+    </div>
+
+    <CtaBand :title="t(`${NS}.cta.title`)" :text="t(`${NS}.cta.text`)" />
+  </div>
+</template>
+
 <style scoped>
-.gs {
-  font-family: 'Outfit', sans-serif;
+/* The body alternates ProseArticle segments (one per section) with product figures, so the mockups stay outside the
+   prose typography. These rules style the pieces the bodies share. */
+.post-body :deep(h2[id]) { scroll-margin-top: 6rem; }
+.post-body :deep(.post-section + .post-section),
+.post-body :deep(figure + .post-section) { margin-top: 3.5rem; }
+.post-body :deep(.post-section + figure) { margin-top: 2.5rem; }
+
+/* Example prompt: a quiet card, set apart from the running text. */
+.post-body :deep(.post-prompt) {
+  margin-top: 1.5em;
+  border: 1px solid var(--color-line);
+  border-left: 2px solid var(--color-accent-500);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  padding: 0.9rem 1.15rem 1rem;
+  font-size: 0.96em;
+  line-height: 1.65;
+  color: var(--color-ink);
 }
+.post-body :deep(.post-prompt-label) {
+  margin: 0;
+  font-size: var(--text-micro);
+  line-height: var(--text-micro--line-height);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+}
+.post-body :deep(.post-prompt > :not(.post-prompt-label)) { margin-top: 0.4em; }
+.post-body :deep(.post-prompt ul) { padding-left: 1.2em; }
+/* A prompt is text the reader types, so no automatic hyphens (the RU running text has them). */
+.post-body :deep(.post-prompt :is(p, li)) { hyphens: manual; }
+
+/* Closing note: general information, not legal advice. No rule of its own: the related-pages rule follows right after. */
+.post-body :deep(.post-note) { margin-top: 2.5em; font-size: 0.875rem; line-height: 1.6; color: var(--color-ink-subtle); }
 </style>

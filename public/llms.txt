@@ -1,0 +1,32 @@
+# AdiletAI
+
+> AdiletAI is a legal AI platform for in-house legal teams and law firms in Kazakhstan. It answers legal questions with citations to Kazakhstan legislation, reviews contracts for risk and turns document sets into structured review tables, working with documents in Kazakh, Russian and English.
+
+AdiletAI is an independent company founded in Shymkent, Kazakhstan. It is not affiliated with the Ministry of Justice's "Әділет" legal information system (adilet.zan.kz). Access is provided after a demo and onboarding; the product runs at https://business.adiletai.com. AdiletAI assists legal professionals and does not provide legal advice.
+
+The site is available in English (default), Russian (/ru) and Kazakh (/kk).
+
+## Product
+
+- [Platform](https://www.adiletai.com/features): Assistant (cited research on Kazakhstan law, contract risk scan, drafting, translation), Vault (document workspaces with OCR and semantic search), Review tables (bulk extraction across documents), Court practice analysis (public Kazakhstan court decisions, risk register, memorandum)
+- [How it works](https://www.adiletai.com/how-it-works): retrieval from a Kazakhstan legislation database, official sources and your documents; numbered citations; lawyer review
+- [Use cases](https://www.adiletai.com/use-cases): in-house legal teams, law firms, compliance and tax teams
+- [Security and data handling](https://www.adiletai.com/security): sign-in, encryption, pseudonymisation of personal identifiers, AI sub-processors
+
+## Company
+
+- [About](https://www.adiletai.com/about)
+- [FAQ](https://www.adiletai.com/faq)
+- [Contact and demo](https://www.adiletai.com/contact): support@adiletai.com
+- [Blog](https://www.adiletai.com/blog)
+
+## Legal
+
+- [Terms of use](https://www.adiletai.com/legal/terms)
+- [Privacy policy](https://www.adiletai.com/legal/privacy)
+- [Disclaimer](https://www.adiletai.com/legal/disclaimer)
+
+## Other languages
+
+- [Русский](https://www.adiletai.com/ru)
+- [Қазақша](https://www.adiletai.com/kk)

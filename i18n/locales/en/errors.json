@@ -1,0 +1,14 @@
+{
+  "errors": {
+    "notFound": {
+      "title": "Page not found",
+      "text": "We couldn't find the page you were looking for. It may have moved, or the address may be mistyped."
+    },
+    "generic": {
+      "title": "Something went wrong",
+      "text": "An unexpected error occurred. Try reloading the page or go back to the home page."
+    },
+    "home": "Back to home",
+    "contact": "Contact us"
+  }
+}

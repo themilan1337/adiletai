@@ -1,0 +1,29 @@
+{
+  "legalTerms": {
+    "meta": {
+      "title": "Terms of use: website and legal AI platform",
+      "description": "Terms of use for adiletai.com and the AdiletAI platform: access under an agreement with your organisation, acceptable use, AI output, fees and liability."
+    },
+    "title": "Terms of use",
+    "lead": "These terms govern the use of the adiletai.com website and the AdiletAI platform at business.adiletai.com. Organisations receive access to the platform under an agreement with AdiletAI.",
+    "toc": "Contents",
+    "related": "Related documents",
+    "sections": {
+      "scope": "About these terms",
+      "site": "The website",
+      "platform": "The platform",
+      "access": "Access and accounts",
+      "use": "Acceptable use",
+      "output": "AI output and professional judgement",
+      "content": "Your documents and data",
+      "fees": "Fees and credits",
+      "ip": "Intellectual property",
+      "warranty": "Disclaimer of warranties",
+      "liability": "Limitation of liability",
+      "termination": "Suspension and termination",
+      "changes": "Changes to these terms",
+      "law": "Governing law and disputes",
+      "contact": "Contact"
+    }
+  }
+}

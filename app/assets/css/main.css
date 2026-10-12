@@ -1,15 +1,131 @@
-@import url('https://fonts.cdnfonts.com/css/google-sans');
-@import url(https://fonts.googleapis.com/css?family=Manrope:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
 @import "tailwindcss";
 
-html,
-body {
-    background-color: #ffffff;
-    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/*
+  Design tokens. Neutrals are Tailwind stone (the same palette as the product at business.adiletai.com);
+  the only accent is the logo teal #017595. Fonts are self-hosted by @nuxt/fonts.
+*/
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
+  --font-display: "Source Serif 4", "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+  --text-display-1: clamp(2.5rem, 1.9rem + 2.4vw, 4rem);
+  --text-display-1--line-height: 1.05;
+  --text-display-1--letter-spacing: -0.02em;
+  --text-display-1--font-weight: 500;
+  --text-display-2: clamp(2rem, 1.6rem + 1.6vw, 3rem);
+  --text-display-2--line-height: 1.1;
+  --text-display-2--letter-spacing: -0.015em;
+  --text-display-2--font-weight: 500;
+  --text-display-3: clamp(1.5rem, 1.35rem + 0.6vw, 2rem);
+  --text-display-3--line-height: 1.2;
+  --text-display-3--letter-spacing: -0.01em;
+  --text-display-3--font-weight: 500;
+  --text-lead: clamp(1.0625rem, 1rem + 0.25vw, 1.25rem);
+  --text-lead--line-height: 1.6;
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1.45;
+
+  --color-accent-50: #f1f9fb;
+  --color-accent-100: #dff1f6;
+  --color-accent-200: #bee0e9;
+  --color-accent-300: #88cadd;
+  --color-accent-400: #47b3d1;
+  --color-accent-500: #017595;
+  --color-accent-600: #015d77;
+  --color-accent-700: #014c60;
+  --color-accent-800: #013c4c;
+  --color-accent-900: #002e3a;
+
+  --color-canvas: oklch(98.5% 0.001 106.423);
+  --color-surface: #ffffff;
+  --color-surface-muted: oklch(97% 0.001 106.424);
+  --color-ink: oklch(21.6% 0.006 56.043);
+  --color-ink-muted: oklch(44.4% 0.011 73.639);
+  --color-ink-subtle: oklch(55.3% 0.013 58.071);
+  --color-line: oklch(92.3% 0.003 48.717 / 0.9);
+  --color-line-strong: oklch(86.9% 0.005 56.366);
+  --color-night: oklch(14.7% 0.004 49.25);
+  --color-night-raised: oklch(21.6% 0.006 56.043);
+
+  --radius-control: 0.5rem;
+  --radius-card: 0.75rem;
+  --radius-tile: 1rem;
+  --radius-shell: 1.25rem;
+
+  --shadow-card: 0 1px 2px rgb(28 25 23 / 0.04), 0 2px 8px -2px rgb(28 25 23 / 0.06);
+  --shadow-frame: 0 1px 1px rgb(28 25 23 / 0.03), 0 16px 40px -16px rgb(28 25 23 / 0.18), 0 40px 80px -40px rgb(28 25 23 / 0.14);
+  --shadow-popover: 0 10px 28px -8px rgb(28 25 23 / 0.18), 0 2px 6px -2px rgb(28 25 23 / 0.06);
+
+  --container-page: 75rem;
+  --container-wide: 85rem;
+  --container-copy: 40rem;
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  --animate-rise: rise 0.45s var(--ease-out-quint) both;
+  --animate-shine: shine 1.6s linear infinite;
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(12px); }
+  }
+  @keyframes shine {
+    from { background-position: 150% center; }
+    to { background-position: -50% center; }
+  }
 }
 
-.gs {
-    font-family: 'Product Sans', sans-serif !important;
-    font-weight: normal;
+@layer base {
+  :root { color-scheme: light; }
+
+  html {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 { text-wrap: balance; }
+  p, li, dd, figcaption { text-wrap: pretty; }
+
+  /* break-word: a long Kazakh word in display type wraps instead of overflowing at 360px. */
+  h1, h2, h3, .font-display { overflow-wrap: break-word; }
+  .font-display { font-optical-sizing: auto; font-variant-numeric: lining-nums; }
+
+  :focus-visible { outline: 2px solid var(--color-accent-600); outline-offset: 2px; }
+  /* accent-600 is ~2.7:1 on the night background; accent-300 clears the 3:1 non-text minimum (WCAG 1.4.11). */
+  .bg-night :focus-visible, .bg-night-raised :focus-visible { outline-color: var(--color-accent-300); }
+
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+
+  /* Cyrillic needs looser tracking than Latin at display sizes; Kazakh runs longest, so its H1 steps down. */
+  html:lang(ru), html:lang(kk) {
+    --text-display-1--letter-spacing: -0.01em;
+    --text-display-2--letter-spacing: -0.008em;
+    --text-display-3--letter-spacing: -0.005em;
+  }
+  html:lang(kk) { --text-display-1: clamp(2.25rem, 1.75rem + 2vw, 3.5rem); }
+  /* Body text hyphenates in Russian; lead paragraphs keep whole words. */
+  html:lang(ru) :where(p, li):not(.text-lead) { hyphens: auto; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

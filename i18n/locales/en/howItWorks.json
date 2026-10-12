@@ -1,0 +1,252 @@
+{
+  "howItWorks": {
+    "meta": {
+      "title": "How legal AI works: cited answers under Kazakhstan law",
+      "description": "How AdiletAI answers: it searches Kazakhstan legislation, your documents and the web, prioritising official sources, then an AI model writes a cited answer."
+    },
+    "hero": {
+      "title": "How AdiletAI turns a question into a cited answer",
+      "lead": "AdiletAI first retrieves Kazakhstan legislation and your documents and, when needed, searches the web with priority for official sources. Then a third-party AI model writes the answer with numbered citations, for a lawyer to review.",
+      "secondary": "See the platform"
+    },
+    "overview": {
+      "title": "Six steps from question to answer.",
+      "continuation": "And who handles your data at each one",
+      "lead": "AdiletAI is built on retrieval-augmented generation (RAG): it retrieves material for your question first, and a third-party AI model writes the answer from that material. The diagram shows each step and where it runs.",
+      "caption": "Data-flow diagram of how AdiletAI answers a question. Steps 1 and 6 happen on your side. Steps 2, 3 and 5 run in AdiletAI, and the search in step 3 also uses third-party AI model and search providers. In step 4 a third-party AI model writes the answer.",
+      "lanes": {
+        "you": {
+          "name": "Your team",
+          "note": "Asks and reviews"
+        },
+        "adiletai": {
+          "name": "AdiletAI",
+          "note": "Masks, retrieves, cites"
+        },
+        "provider": {
+          "name": "Third-party providers",
+          "note": "AI model and search"
+        }
+      },
+      "rows": [
+        {
+          "title": "You ask a question",
+          "body": "Type it, attach files or connect a vault.",
+          "route": "From your team to AdiletAI."
+        },
+        {
+          "title": "Identifiers are masked",
+          "body": "IIN, BIN, IBAN, phone numbers, e‑mail addresses and, on a best-effort basis, personal names in typed messages become placeholders.",
+          "route": "Inside AdiletAI."
+        },
+        {
+          "title": "Material is retrieved",
+          "body": "The legislation database first, then, if it is not enough, a web search that prioritises official sources. Your documents are searched alongside.",
+          "route": "Run by AdiletAI, with third-party AI model and search providers."
+        },
+        {
+          "title": "An AI model writes the answer",
+          "body": "The masked message goes to a third-party AI model with the retrieved material and the text of your attachments.",
+          "route": "From AdiletAI to a third-party AI model."
+        },
+        {
+          "title": "You get a cited answer",
+          "body": "Identifiers are restored. The answer has numbered citations and a Sources panel, and the assistant is instructed to add a note for the reviewing lawyer.",
+          "route": "From the AI model back through AdiletAI to your team."
+        },
+        {
+          "title": "A lawyer reviews",
+          "body": "Output must be reviewed by a lawyer before anyone relies on it.",
+          "route": "On your side."
+        }
+      ]
+    },
+    "steps": {
+      "title": "What happens at each step.",
+      "continuation": "In the order the product runs them",
+      "ask": {
+        "title": "You ask a question, attach files or connect a vault",
+        "body": "Write in Kazakh, Russian or English. Attach files to the chat or connect one or more vaults, and AdiletAI searches them along with the law. It detects the kind of task (general question, tax, contract analysis, drafting or translation) and shows the mode it chose as a badge.",
+        "points": [
+          "Up to 100 files per chat: PDF, Word (.docx), Excel, PowerPoint (.pptx), Outlook e‑mails (.msg), images and scans",
+          "Built-in OCR makes scans readable and is tuned for Kazakh and Russian; if a file cannot be read, AdiletAI tells you instead of guessing",
+          "For complex tasks it first asks a few quick multiple-choice clarifying questions"
+        ],
+        "question": "Clause 7.2 of the attached supply agreement sets a daily penalty with no cap. Can the court reduce it?",
+        "caption": "Illustration: a question typed in the Assistant, with a contract and a vault attached and the attach menu open. Sample data; the product interface is in Russian."
+      },
+      "mask": {
+        "title": "Personal identifiers in your message are pseudonymised",
+        "body": "Before your message reaches the AI model, the personal identifiers you typed (IIN, BIN, IBAN, phone numbers, e‑mail addresses and, on a best-effort basis, personal names) are replaced with placeholders. They are restored in the answer, so you read the real values.",
+        "scope": "This applies to typed messages only. Pseudonymisation does not cover the text of attached documents or document text indexed for search, including your vaults. Nor does it cover the web-search queries that court practice analysis builds from your dispute description and sends to its search provider. Names are detected automatically, so some may be missed."
+      },
+      "retrieve": {
+        "title": "AdiletAI retrieves the material for the answer",
+        "body": "The assistant is instructed to search the legislation database first and to search the web when the database is not enough. Your files and vaults are searched alongside, and a progress panel shows which searches ran before the answer appears.",
+        "sources": [
+          {
+            "title": "Legislation database",
+            "body": "A curated database of Kazakhstan’s codes and laws, in Russian. It is searched first."
+          },
+          {
+            "title": "Web search",
+            "body": "When the database is not enough, AdiletAI searches the web through a third-party search provider, with priority for official sources such as adilet.zan.kz, gov.kz, akorda.kz and parlam.kz, and aifc.kz and iac.kz for Astana International Financial Centre (AIFC) matters. Other sites can also appear in the results."
+          },
+          {
+            "title": "Your documents",
+            "body": "Attached files and connected vaults are searched by meaning for the passages most relevant to the question."
+          }
+        ],
+        "fallback": "If the database has nothing relevant, the assistant is instructed to say so rather than answer from memory.",
+        "caption": "Illustration: the progress panel during an answer, with searches in Kazakhstan legislation and in the attached contract. Sample data."
+      },
+      "write": {
+        "title": "A third-party AI model writes the answer",
+        "body": "The pseudonymised message goes to a third-party AI model together with the retrieved material and the text of your attachments. The model writes the answer from that material, and the answer streams live.",
+        "points": [
+          "It is instructed to rely on Kazakhstan law, not Russian Federation law",
+          "Your team’s practice profile (positions on key terms, deal-breakers, escalation rules and house style), set up during onboarding, is applied to answers and contract scans",
+          "General answers come back in the language of your question"
+        ],
+        "providers": "AdiletAI uses third-party AI model and search providers, and some of them process data outside Kazakhstan. The current list of sub-processors is available on request.",
+        "providersLink": "How we handle data",
+        "answer": [
+          "Yes. To claim a penalty, the supplier does not have to prove its losses[3]. At your request, however, the court may reduce a penalty that is excessively high compared with those losses[2].",
+          "Clause 7.2 sets a daily penalty with no upper limit[1], which supports the request."
+        ],
+        "caption": "Illustration: part of an answer with numbered citations. In the general mode shown here, the answer follows the language of the question; sample data."
+      },
+      "cite": {
+        "title": "You see numbered citations and the Sources panel",
+        "body": "Markers such as [1] and [2] in the answer open a Sources panel grouped into Documents, Knowledge base and Web. Legislation sources name the act and article, with the edition date when available.",
+        "reviewer": "The assistant is also instructed to add a note for the reviewing lawyer on what it could not verify.",
+        "noteTitle": "Note for the reviewing lawyer",
+        "note": "The agreement does not show the supplier’s actual losses. Request them before relying on this argument.",
+        "caption": "Illustration: the Sources panel opened from citation 2, with the note for the reviewing lawyer. Sample data; legislation sources are in Russian, as in the database."
+      },
+      "review": {
+        "title": "A lawyer reviews before anyone relies on it",
+        "body": "AdiletAI assists legal professionals and does not provide legal advice. Output must be reviewed by a lawyer.",
+        "checklistTitle": "What the reviewing lawyer checks",
+        "checklist": [
+          "The source behind each citation the conclusion depends on",
+          "Whether the cited edition of the act is still current, on adilet.zan.kz",
+          "Everything the note for the reviewing lawyer flags",
+          "Facts the answer assumes but your documents do not confirm"
+        ]
+      }
+    },
+    "court": {
+      "title": "Court practice analysis has its own flow.",
+      "continuation": "From a dispute description to an editable memorandum",
+      "lead": "Court practice analysis («Аналитика» in the app) is a separate module. It runs in the background, so you can close the tab, and each analysis is private to the lawyer who created it. Output is in Russian.",
+      "steps": [
+        {
+          "title": "Describe the dispute",
+          "body": "Describe it in plain language. AdiletAI works out your side (plaintiff or defendant) and the dispute category. You can connect a vault so your case documents inform the research."
+        },
+        {
+          "title": "Search public court websites",
+          "body": "It searches public Kazakhstan court and legal websites through a third-party search provider, with official sources ranked first."
+        },
+        {
+          "title": "Build a table of decisions",
+          "body": "Each relevant decision gets the court, date, applied norms, the court’s legal position and a link to the source, where the source states them."
+        },
+        {
+          "title": "Find patterns, risks and next steps",
+          "body": "Winning and losing patterns linked to the decisions they come from, a risk register where each risk cites its basis or is labelled a hypothesis, and a prioritised preparation checklist."
+        },
+        {
+          "title": "Assemble the memorandum",
+          "body": "A one-page summary for a partner and an auto-assembled memorandum you can edit. Before export to Markdown, HTML or plain text, every case number, norm and link in the memo is checked against the analysis’ own source list, and mismatches are flagged."
+        }
+      ],
+      "caption": "Illustration: exporting the memorandum after the citation check found no mismatches. Sample data."
+    },
+    "limits": {
+      "title": "What AdiletAI does not do",
+      "lead": "A tool for lawyers is only useful when its limits are clear. These are ours.",
+      "items": [
+        {
+          "title": "It does not give legal advice",
+          "body": "AdiletAI assists legal professionals. Its output must be reviewed by a qualified lawyer."
+        },
+        {
+          "title": "It can be wrong",
+          "body": "Retrieval can miss a relevant norm, the model can misread a source, and a citation number can point to the wrong source. The Assistant does not verify its citations automatically, so open the sources before you rely on them."
+        },
+        {
+          "title": "It is not built to predict outcomes",
+          "body": "Court practice analysis shows decisions, patterns, risks and a preparation checklist for a lawyer to assess. Do not read anything in it as a win probability or a forecast of how a court will rule."
+        },
+        {
+          "title": "It does not cover all legislation",
+          "body": "The legislation database is a curated set of Kazakhstan’s codes and laws, in Russian. It does not include every normative legal act."
+        },
+        {
+          "title": "It does not mask documents or search queries",
+          "body": "Pseudonymisation covers personal identifiers in typed messages, and names only on a best-effort basis. It does not cover the text of attached documents, document text indexed for search, or the web-search queries that court practice analysis sends to its search provider."
+        },
+        {
+          "title": "Its interface is in Russian",
+          "body": "General answers come back in Kazakh, Russian or English, following your question. Contract scans, drafts, tax-mode answers and court practice analyses are produced in Russian by default, and clarifying questions are asked in Russian."
+        }
+      ],
+      "disclaimer": "Read the disclaimer"
+    },
+    "start": {
+      "title": "Getting started.",
+      "continuation": "Three steps, with our team alongside",
+      "steps": [
+        {
+          "title": "Book a demo",
+          "body": "We walk your team through the Assistant, Vault, review tables and court practice analysis, ideally on a question from your own practice."
+        },
+        {
+          "title": "Onboarding with your playbook",
+          "body": "Access is by invitation. During assisted onboarding we set up access and your practice profile: positions on key terms, deal-breakers, escalation rules and house style. We walk your security team through the data flow before rollout."
+        },
+        {
+          "title": "Your team gets to work",
+          "body": "Lawyers sign in at business.adiletai.com and use AdiletAI in their daily work. Usage is metered in credits, and plans are arranged with our team."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions about how it works",
+      "items": [
+        {
+          "q": "What is RAG, and how does AdiletAI use it?",
+          "a": "Retrieval-augmented generation (RAG) means the AI model writes from material retrieved for your question rather than from its memory alone. In AdiletAI, retrieval starts with a curated database of Kazakhstan’s codes and laws and, when the database is not enough, continues with a web search that prioritises official sources. The files you attach and the vaults you connect are searched too. Each answer lists the sources it drew on in a Sources panel."
+        },
+        {
+          "q": "Which AI model writes the answers?",
+          "a": "A third-party one. AdiletAI uses third-party AI model and search providers, and some of them process data outside Kazakhstan. The current list of sub-processors is available on request, and we walk your security team through the data flow before rollout."
+        },
+        {
+          "q": "Does AdiletAI check its citations automatically?",
+          "a": "Not in the Assistant. Each answer lists the sources it drew on in a Sources panel, and the reviewing lawyer checks them. Court practice analysis has an automatic check: before a memorandum is exported, every case number, norm and link in it is checked against the analysis’ own source list, and mismatches are flagged. This confirms that the memo matches the analysis’ sources; it does not check them against court records or official texts."
+        },
+        {
+          "q": "What happens if the legislation database has nothing relevant?",
+          "a": "The assistant is instructed to say so rather than answer from memory. When the database is not enough, it runs a web search that prioritises official sources such as adilet.zan.kz, gov.kz, akorda.kz and parlam.kz, and aifc.kz and iac.kz for AIFC matters. Other sites can also appear in the results."
+        },
+        {
+          "q": "Are attached documents pseudonymised too?",
+          "a": "No. Pseudonymisation applies to personal identifiers in your typed messages: IIN, BIN, IBAN, phone numbers, e‑mail addresses and, on a best-effort basis, personal names. Names are detected automatically, so some may be missed. Pseudonymisation does not cover the text of attached documents or document text indexed for search. Nor does it cover the web-search queries that court practice analysis builds from your dispute description and sends to its search provider. Vaults, chats and analyses are private to your account, and you can delete documents, vaults and chats at any time."
+        }
+      ]
+    },
+    "related": {
+      "title": "Read next",
+      "platform": "Each module in detail: the Assistant, Vault, review tables and court practice analysis.",
+      "security": "Sign-in, encryption of uploaded files, pseudonymisation and third-party providers.",
+      "useCases": "Typical tasks for in-house legal teams and law firms."
+    },
+    "cta": {
+      "title": "See each step on your own question",
+      "text": "Bring a real question to the demo. We show the retrieval, the citations and the Sources panel, and walk your security team through the data flow."
+    }
+  }
+}

@@ -1,162 +1,126 @@
-<template>
-  <div class="container mx-auto mt-24 px-4 sm:px-0">
-    <header class="w-full max-w-3xl mx-auto">
-      <h1 class="text-3xl gs text-center sm:text-left font-bold sm:font-normal sm:text-2xl md:text-3xl lg:text-4xl mt-6 sm:mt-8 md:mt-12 tracking-tight text-zinc-900 lg:text-balance">
-        Политика конфиденциальности AdiletAI
-      </h1>
-      <p class="text-sm text-center sm:text-left sm:text-base mt-3 sm:mt-4 text-zinc-600 lg:text-balance">
-        Мы — молодёжная команда из Казахстана, создающая юридического помощника с технологией RAG. Ниже описано, какие данные мы собираем, как используем и защищаем их.
-      </p>
-      <nav class="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center mt-6 sm:mt-8 gap-3 sm:gap-2" aria-label="Ссылки на юридические документы">
-        <NuxtLink to="/legal/terms" class="relative flex gs items-center justify-center text-center font-medium rounded-md text-white bg-zinc-700 outline outline-zinc-700 hover:bg-zinc-600 h-10 sm:h-9 px-4 text-sm">Правила пользования</NuxtLink>
-        <NuxtLink to="/legal/disclaimer" class="relative flex gs items-center justify-center text-center font-medium rounded-md text-zinc-600 bg-zinc-50 outline outline-zinc-100 hover:bg-zinc-200 h-10 sm:h-9 px-4 text-sm">Отказ от ответственности</NuxtLink>
-      </nav>
-    </header>
-
-    <section class="mt-8 sm:mt-10 md:mt-12 grid grid-cols-1 gap-6 sm:gap-7 md:gap-8 max-w-3xl mx-auto" aria-label="Содержание политики конфиденциальности">
-      <article class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">1. Кого касается эта политика</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Политика применяется к посетителям сайта <span class="font-medium">adiletai.com</span>, пользователям приложения <span class="font-medium">app.adiletai.com</span> и лицам, взаимодействующим с нами по электронной почте или через формы обратной связи.
-        </p>
-      </article>
-
-      <article id="data-collected" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">2. Какие данные мы собираем</h2>
-        <ul class="list-disc pl-5 space-y-2 text-zinc-700 text-sm sm:text-base">
-          <li><span class="font-medium">Технические данные</span>: IP-адрес, тип устройства/браузера, язык, данные cookies, приблизительная геолокация.</li>
-          <li><span class="font-medium">Данные использования</span>: запросы, клики, время взаимодействия, страницы, на которых вы были.</li>
-          <li><span class="font-medium">Содержимое запросов</span>: текст, который вы вводите в чат/формы. Мы стремимся минимизировать персональные данные в запросах и просим не отправлять чувствительную информацию.</li>
-          <li><span class="font-medium">Коммуникации</span>: сообщения по e‑mail, обратная связь, результаты опросов.</li>
-        </ul>
-      </article>
-
-      <article id="purposes" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">3. Цели обработки</h2>
-        <ul class="list-disc pl-5 space-y-2 text-zinc-700 text-sm sm:text-base">
-          <li>Предоставление сервиса, генерация ответов и улучшение качества подсказок (включая RAG‑проверку).</li>
-          <li>Аналитика производительности и безопасности, предотвращение злоупотреблений.</li>
-          <li>Коммуникация с пользователями: ответы на запросы, уведомления об обновлениях.</li>
-          <li>Исследовательские цели и улучшение моделей ИИ с соблюдением принципов этичности и минимизации данных.</li>
-        </ul>
-      </article>
-
-      <article id="legal-basis" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">4. Правовые основания</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Мы руководствуемся законодательством Республики Казахстан и общепринятыми международными стандартами защиты данных. Правовыми основаниями являются: выполнение договора (оказание сервиса), согласие пользователя, законные интересы (обеспечение безопасности и улучшение сервиса).
-        </p>
-      </article>
-
-      <article id="retention" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">5. Сроки хранения</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Технические логи — до 12 месяцев. Содержимое запросов — минимально необходимое время для улучшения сервиса и отладки, после чего подлежит обезличиванию или удалению. Конкретные сроки могут меняться при переходе из MVP в полноценный релиз.
-        </p>
-      </article>
-
-      <article id="sharing" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">6. Передача третьим лицам</h2>
-        <ul class="list-disc pl-5 space-y-2 text-zinc-700 text-sm sm:text-base">
-          <li>Провайдеры хостинга, аналитики и инфраструктуры — строго по договорам обработки.</li>
-          <li>Партнёры и консультанты — для валидации качества, при условии обезличивания данных.</li>
-          <li>Государственные органы — только по законному запросу и в рамках применимого права.</li>
-        </ul>
-      </article>
-
-      <article id="cookies" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">7. Cookies и аналитика</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Мы используем cookies для работы сайта, а также инструменты веб‑аналитики (например, Vercel Analytics) для агрегированной статистики. Вы можете ограничить cookies в настройках браузера, однако часть функций может работать некорректно.
-        </p>
-      </article>
-
-      <article id="rights" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">8. Права пользователя</h2>
-        <ul class="list-disc pl-5 space-y-2 text-zinc-700 text-sm sm:text-base">
-          <li>Доступ к данным и получение копии.</li>
-          <li>Исправление неточностей и удаление данных, если это допустимо по закону.</li>
-          <li>Отзыв согласия и ограничение обработки.</li>
-          <li>Подача жалобы в уполномоченный орган по защите данных.</li>
-        </ul>
-      </article>
-
-      <article id="security" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">9. Безопасность</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Мы применяем организационные и технические меры защиты: контроль доступа, шифрование каналов, мониторинг инцидентов. Ни один онлайн‑сервис не может гарантировать абсолютную безопасность, поэтому просим не отправлять чувствительные персональные данные через чат.
-        </p>
-      </article>
-
-      <article id="minors" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">10. Несовершеннолетние</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Сервис предназначен для совершеннолетних пользователей. Несовершеннолетние могут использовать сервис только с разрешения и под контролем законных представителей.
-        </p>
-      </article>
-
-      <article id="international" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">11. Международные передачи</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Возможна передача данных на серверы за пределы Республики Казахстан, если это необходимо для работы инфраструктуры. В таких случаях мы стремимся обеспечивать эквивалентный уровень защиты.
-        </p>
-      </article>
-
-      <article id="changes" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">12. Изменения политики</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Мы можем обновлять настоящую политику. Дата последнего обновления: <span class="font-medium text-zinc-900">{{ lastUpdated }}</span>.
-        </p>
-      </article>
-
-      <article id="contacts" class="flex flex-col gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-zinc-900 gs">13. Контакты</h2>
-        <p class="text-zinc-700 text-sm sm:text-base">
-          Вопросы по данным, реализации прав и безопасности направляйте на <a href="mailto:support@adiletai.com" class="underline text-zinc-900 hover:text-zinc-700">support@adiletai.com</a>.
-        </p>
-      </article>
-    </section>
-  </div>
-  <br>
-</template>
-
 <script setup lang="ts">
-const lastUpdated = new Date().toISOString().slice(0, 10)
+// Privacy policy (/legal/privacy). The long-form body is one plain SFC per locale
+// (components/content/legal/privacy/<locale>.vue, i18n-tech.md section 7). Section headings and ids come from
+// legalPrivacy.toc, shared by the body and the table of contents, so the two never drift.
+// Every statement maps to claims.md. Bump UPDATED whenever any of the three bodies changes.
+const UPDATED = '2026-10-12'
+// Order = section numbering in the body (CSS counter below) and in the table of contents.
+const SECTIONS = ['scope', 'data', 'purposes', 'grounds', 'providers', 'pseudonymisation', 'security', 'retention', 'rights', 'changes', 'contact'] as const
+
+const bodies: Record<string, Component> = {
+  en: defineAsyncComponent(() => import('~/components/content/legal/privacy/en.vue')),
+  ru: defineAsyncComponent(() => import('~/components/content/legal/privacy/ru.vue')),
+  kk: defineAsyncComponent(() => import('~/components/content/legal/privacy/kk.vue')),
+}
+
+const related = [
+  { label: 'common.legalLinks.terms', to: '/legal/terms' },
+  { label: 'common.legalLinks.disclaimer', to: '/legal/disclaimer' },
+  { label: 'common.nav.security', to: '/security' },
+]
+
+const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 useSeoMeta({
-  title: 'Политика конфиденциальности — AdiletAI',
-  description: 'Какие данные собирает AdiletAI, как мы их используем, храним и защищаем. Права пользователей и контакты.',
-  keywords: 'adiletai privacy, политика конфиденциальности, защита данных казахстан',
-  robots: 'index,follow',
-  ogType: 'website',
-  ogUrl: 'https://adiletai.com/legal/privacy',
-  ogTitle: 'Политика конфиденциальности — AdiletAI',
-  ogDescription: 'Прозрачные практики обработки данных и безопасность.',
-  ogImage: 'https://adiletai.com/app.png',
-  ogLocale: 'ru_RU',
-  twitterCard: 'summary',
-  twitterTitle: 'Политика конфиденциальности — AdiletAI',
-  twitterDescription: 'Сбор, использование, хранение и права пользователей.',
-  twitterImage: 'https://adiletai.com/app.png',
-  language: 'ru'
+  title: () => t('legalPrivacy.meta.title'),
+  description: () => t('legalPrivacy.meta.description'),
+  ogTitle: () => t('legalPrivacy.meta.title'),
+  ogDescription: () => t('legalPrivacy.meta.description'),
+  twitterTitle: () => t('legalPrivacy.meta.title'),
+  twitterDescription: () => t('legalPrivacy.meta.description'),
 })
 
-useSchemaOrg([
-  {
-    '@type': 'WebPage',
-    '@id': 'https://adiletai.com/legal/privacy#webpage',
-    url: 'https://adiletai.com/legal/privacy',
-    name: 'Политика конфиденциальности — AdiletAI',
-    description: 'Подробная политика обработки персональных данных проекта AdiletAI.',
-    inLanguage: 'ru-RU',
-    isPartOf: { '@id': 'https://adiletai.com/#website' },
-    about: { '@id': 'https://adiletai.com/#organization' },
-    dateModified: new Date().toISOString()
-  }
-])
-
-useHead({
-  link: [{ rel: 'canonical', href: 'https://adiletai.com/legal/privacy' }],
-  htmlAttrs: { lang: 'ru' }
-})
+// Same absolute @id as the WebPage node @nuxtjs/seo emits for this URL, so dateModified merges into it.
+const site = useSiteConfig()
+const route = useRoute()
+useSchemaOrg([{ '@type': 'WebPage', '@id': () => `${site.url}${route.path}#webpage`, 'dateModified': UPDATED }])
 </script>
+
+<template>
+  <div class="mx-auto max-w-page px-4 pt-10 pb-24 sm:px-6 md:pt-16 md:pb-32">
+    <Breadcrumbs :items="[{ label: t('common.legalLinks.privacy') }]" class="mb-10 md:mb-14" />
+
+    <!-- Same frame as legal/terms and legal/disclaimer: collapsible contents below lg, sticky contents column at lg. -->
+    <div class="lg:grid lg:grid-cols-[minmax(0,1fr)_16rem] lg:gap-16 xl:gap-24">
+      <div class="min-w-0">
+        <!-- hyphens-auto on the H1: RU «конфиденциальности» is wider than the column below 390px, and the global heading
+             overflow-wrap guard otherwise cuts it with no hyphen («конфиденциальнос / ти»). -->
+        <ArticleHeader
+          class="max-w-copy [&_h1]:hyphens-auto"
+          :title="t('legalPrivacy.title')"
+          :description="t('legalPrivacy.lead')"
+          :updated="UPDATED"
+        />
+
+        <!-- Phones and tablets: collapsible contents -->
+        <details class="group mt-10 max-w-copy rounded-card border border-line bg-surface lg:hidden">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-card px-5 py-4 text-sm font-medium text-ink focus-visible:-outline-offset-2 [&::-webkit-details-marker]:hidden">
+            {{ t('legalPrivacy.tocLabel') }}
+            <Icon name="hugeicons:arrow-down-01" class="size-4! shrink-0 text-ink-subtle transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
+          </summary>
+          <nav :aria-label="t('legalPrivacy.tocLabel')" class="border-t border-line px-5 py-3">
+            <ol class="text-sm">
+              <li v-for="(id, i) in SECTIONS" :key="id" class="hyphens-none">
+                <a :href="`#${id}`" class="flex gap-2 rounded-sm py-1.5 text-ink-muted transition-colors hover:text-ink">
+                  <span class="w-6 shrink-0 text-ink-subtle tabular-nums">{{ i + 1 }}.</span>
+                  <span class="min-w-0">{{ t(`legalPrivacy.toc.${id}`) }}</span>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </details>
+
+        <!-- Links never wrap: every link in the bodies is short, and a split "6-/бөлімде" or "section/6" reads as two links. -->
+        <ProseArticle class="privacy-body mt-12 md:mt-14 [&_a]:whitespace-nowrap">
+          <component :is="bodies[locale]" />
+        </ProseArticle>
+
+        <nav aria-labelledby="privacy-related" class="mt-16 max-w-copy border-t border-line pt-8">
+          <h2 id="privacy-related" class="text-sm font-medium text-ink-subtle">
+            {{ t('legalPrivacy.related') }}
+          </h2>
+          <ul class="mt-4 border-t border-line">
+            <li v-for="link in related" :key="link.to" class="border-b border-line">
+              <NuxtLink :to="localePath(link.to)" class="group flex items-center justify-between gap-4 py-4 text-[17px] font-medium text-ink transition-colors hover:text-accent-700">
+                {{ t(link.label) }}
+                <Icon name="hugeicons:arrow-right-02" class="size-4! shrink-0 text-ink-subtle transition-transform group-hover:translate-x-0.5 group-hover:text-accent-700" aria-hidden="true" />
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Desktop: sticky contents -->
+      <aside class="hidden lg:block">
+        <nav :aria-label="t('legalPrivacy.tocLabel')" class="sticky top-28 max-h-[calc(100dvh-8rem)] overflow-y-auto">
+          <p class="text-sm font-medium text-ink-subtle">
+            {{ t('legalPrivacy.tocLabel') }}
+          </p>
+          <ol class="mt-4 border-l border-line text-sm">
+            <li v-for="(id, i) in SECTIONS" :key="id" class="hyphens-none">
+              <!-- Inset focus ring: the scroll container clips an outset outline on the left and right. -->
+              <a :href="`#${id}`" class="-ml-px flex gap-2 border-l border-transparent py-1.5 pl-4 leading-snug text-ink-muted transition-colors hover:border-ink hover:text-ink focus-visible:-outline-offset-2">
+                <span class="w-6 shrink-0 text-ink-subtle tabular-nums">{{ i + 1 }}.</span>
+                <span class="min-w-0">{{ t(`legalPrivacy.toc.${id}`) }}</span>
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+/* Number the body's section headings (only H2s with an id, i.e. the TOC sections) and keep them clear of the sticky header. */
+.privacy-body { counter-reset: privacy-section; }
+/* Flex row: a wrapped (RU/KK) title hangs under its own text, not under the number. */
+.privacy-body :deep(h2[id]) { display: flex; gap: 0.45em; counter-increment: privacy-section; scroll-margin-top: 6rem; }
+.privacy-body :deep(h2[id]::before) {
+  content: counter(privacy-section) ".";
+  flex: none;
+  color: var(--color-ink-subtle);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+</style>

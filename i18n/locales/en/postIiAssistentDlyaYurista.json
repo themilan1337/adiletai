@@ -1,0 +1,26 @@
+{
+  "postIiAssistentDlyaYurista": {
+    "meta": {
+      "title": "AI assistant for lawyers: a practical guide",
+      "description": "How lawyers in Kazakhstan can use an AI assistant for legal research, contract review, review tables, court practice and translation, and how to check its work.",
+      "excerpt": "Five everyday tasks where an AI assistant helps a lawyer in Kazakhstan, with example prompts and a routine for checking every answer."
+    },
+    "title": "AI assistant for lawyers: a practical guide to everyday work",
+    "lead": "Five tasks where an AI assistant helps a lawyer in Kazakhstan, with example prompts, a routine for checking every answer and the questions to ask a vendor about your data.",
+    "breadcrumb": "AI assistant for lawyers",
+    "toc": {
+      "research": "Research a question of Kazakhstan law",
+      "contracts": "First-pass contract review",
+      "tables": "Extract terms into a review table",
+      "disputes": "Prepare for a dispute with court practice",
+      "translation": "Translate bilingual contracts",
+      "verification": "A verification routine for every answer",
+      "data": "What to ask a vendor about your data",
+      "start": "How to start"
+    },
+    "cta": {
+      "title": "See the five workflows in a demo",
+      "text": "We walk your team through research, contract review, review tables, court practice analysis and translation, then set up access and your practice profile with assisted onboarding."
+    }
+  }
+}

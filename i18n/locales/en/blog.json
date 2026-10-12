@@ -1,0 +1,42 @@
+{
+  "blog": {
+    "meta": {
+      "title": "Blog on legal AI and Kazakhstan law",
+      "description": "Practical articles for in-house legal teams and law firms in Kazakhstan: how legal AI works, how to choose and check a tool, and what changes for lawyers."
+    },
+    "hero": {
+      "title": "Practical notes on legal AI and Kazakhstan law",
+      "lead": "The AdiletAI blog publishes practical articles for in-house legal teams and law firms in Kazakhstan: how legal AI tools work, where they help in everyday legal work and where a lawyer’s review remains essential."
+    },
+    "list": {
+      "title": "Articles",
+      "featured": "Featured",
+      "read": "Read the article",
+      "published": "Published {date}",
+      "updated": "Updated {date}"
+    },
+    "note": {
+      "title": "About these articles",
+      "text": "The articles are general information for legal professionals, not legal advice. Legislation changes, so check every norm against the current edition of the act before you rely on it."
+    },
+    "next": {
+      "title": "From reading to practice.",
+      "continuation": "See how AdiletAI handles the tasks these articles describe",
+      "items": {
+        "howItWorks": "How AdiletAI searches legislation and your documents, cites the act and article, and leaves the final check to a lawyer.",
+        "platform": "The Assistant, Vault, review tables and court practice analysis: what each module does.",
+        "security": "How sign-in, encryption of uploaded files and pseudonymisation of your typed messages work, and where each control stops.",
+        "faq": "Short answers about sources, languages, data handling and access."
+      }
+    },
+    "cta": {
+      "title": "Bring a question from your own practice",
+      "text": "Book a demo and bring a real question. We walk your team through the Assistant, Vault, review tables and court practice analysis, then set up access with assisted onboarding."
+    },
+    "post": {
+      "toc": "Contents",
+      "related": "Related articles",
+      "author": "AdiletAI team"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "about": {
+    "meta": {
+      "title": "About the company: legal AI from Kazakhstan",
+      "description": "AdiletAI, founded in Shymkent, builds a legal AI platform for in-house legal teams and law firms in Kazakhstan. Our mission, principles and founders."
+    },
+    "hero": {
+      "title": "Legal AI made in Kazakhstan, for Kazakhstan law",
+      "lead": "AdiletAI is an independent company founded in Shymkent. Our mission is to help in-house legal teams and law firms work faster under Kazakhstan law, with results a lawyer can check."
+    },
+    "what": {
+      "heading": "What AdiletAI is",
+      "statement": "AdiletAI is a legal AI platform for in-house legal teams and law firms in Kazakhstan.",
+      "continuation": "It answers legal questions with citations to Kazakhstan legislation, reviews contracts for risk and turns document sets into structured review tables, working with documents in Kazakh, Russian and English.",
+      "facts": {
+        "founded": {
+          "label": "Founded in",
+          "value": "Shymkent, Kazakhstan"
+        },
+        "audience": {
+          "label": "Built for",
+          "value": "In-house legal teams and law firms, plus compliance and tax teams inside companies"
+        },
+        "languages": {
+          "label": "Languages",
+          "value": "Questions and documents in Kazakh, Russian and English; the app interface is in Russian"
+        },
+        "access": {
+          "label": "Access",
+          "value": "By invitation, with assisted onboarding; plans are arranged with our team"
+        },
+        "product": {
+          "label": "Platform",
+          "note": "Sign-in for customers"
+        },
+        "contact": {
+          "label": "Contact"
+        }
+      }
+    },
+    "name": {
+      "title": "Where the name comes from",
+      "meaning": "“Әділет” means “justice” in Kazakh.",
+      "independent": "AdiletAI is an independent company and is not affiliated with the Ministry of Justice’s “Әділет” legal information system (adilet.zan.kz).",
+      "source": "The site itself, adilet.zan.kz, is one of the official sources the assistant gives priority to when its legislation database is not enough.",
+      "card": {
+        "label": "Kazakh · noun",
+        "ruLabel": "Russian",
+        "enLabel": "English",
+        "brandLabel": "In our name",
+        "word": "Әділет",
+        "ruWord": "справедливость",
+        "enWord": "justice",
+        "brand": "Adilet + AI"
+      }
+    },
+    "mission": {
+      "eyebrow": "Our mission",
+      "title": "Faster work under Kazakhstan law.",
+      "continuation": "With results a lawyer can check",
+      "faster": {
+        "title": "Faster",
+        "body": "Much of legal work is groundwork: finding the right norm, reading a contract clause by clause, pulling the same facts out of a stack of documents. AdiletAI takes on that groundwork. It searches legislation, scans contracts for risk and fills review tables, so lawyers can spend their time on judgement.",
+        "mockLabel": "Illustration: Assistant progress steps for searching Kazakhstan legislation, searching your documents and scanning a contract for risk. The product interface is in Russian."
+      },
+      "verifiable": {
+        "title": "Verifiable",
+        "body": "Speed is worth little if a lawyer cannot check the result. The assistant cites the act and article it relied on, review-table cells come with the passages they were drawn from, and a court practice memo has its case numbers, norms and links checked against the analysis’ own sources before export.",
+        "mockLabel": "Illustration: two cards from the Sources panel citing Articles 297 and 293 of the Civil Code of the Republic of Kazakhstan. The product interface is in Russian."
+      }
+    },
+    "kazakhstan": {
+      "title": "Why Kazakhstan first",
+      "lead": "Legal work depends on the jurisdiction: its laws, its official sources and the languages its documents are written in. We build for Kazakhstan first, and the details below follow from that choice.",
+      "items": [
+        {
+          "title": "Local law",
+          "body": "The assistant searches a curated database of Kazakhstan’s codes and laws first. When that is not enough, it runs a web search that prioritises official sources such as adilet.zan.kz, gov.kz, akorda.kz and parlam.kz, plus aifc.kz and iac.kz for matters of the Astana International Financial Centre (AIFC)."
+        },
+        {
+          "title": "Bilingual documents",
+          "body": "Contracts, powers of attorney and correspondence in Kazakhstan often come in Kazakh and Russian. Built-in OCR is tuned for Kazakh and Russian. Translation between Kazakh, Russian and English keeps structure, requisites and amounts intact."
+        },
+        {
+          "title": "Kazakh language support",
+          "body": "Ask in Kazakh and general answers come back in Kazakh, just as they do in Russian and English. Contract scans, drafts, tax-mode answers and court practice analyses are produced in Russian by default, and the app interface is in Russian."
+        }
+      ]
+    },
+    "principles": {
+      "title": "How we build.",
+      "continuation": "Five principles behind the product",
+      "items": [
+        {
+          "title": "Sources first",
+          "body": "An answer is worth as much as its sources. The assistant cites the act and article it relied on, with the edition date when available, and lists its sources in a Sources panel. If the database has nothing relevant, it is instructed to say so rather than answer from memory.",
+          "link": "How an answer is grounded"
+        },
+        {
+          "title": "Kazakhstan law first",
+          "body": "The assistant is instructed to rely on Kazakhstan law, not Russian Federation law, and official Kazakhstan sources get priority over the rest of the web. Tax questions switch to a tax mode that takes rates and articles from the Tax Code in its legislation database.",
+          "link": "Explore the platform"
+        },
+        {
+          "title": "The lawyer stays in control",
+          "body": "AdiletAI assists legal professionals and does not replace their judgement. Output must be reviewed by a lawyer, and the assistant is instructed to add a note for the reviewing lawyer on what it could not verify. Drafts, review-table cells and court practice memos stay editable.",
+          "link": "See use cases"
+        },
+        {
+          "title": "Honesty about limits",
+          "body": "We would rather state a limit than oversell. The legislation database is Russian-language and holds a curated set of codes and laws, not all of Kazakhstan’s legislation. Court practice analysis searches public court and legal websites, not a complete database of decisions. If a file cannot be read, the assistant tells you instead of guessing.",
+          "link": "Read the FAQ"
+        },
+        {
+          "title": "Openness about data",
+          "body": "Personal identifiers in your typed messages (IIN, BIN, IBAN, phone numbers, e‑mail addresses and, on a best-effort basis, personal names) are pseudonymised before the message reaches the AI model and restored in the answer. Attached documents, document text indexed for search and court practice search queries are not masked. Uploaded files are encrypted at rest, and vaults, chats and analyses are private to your account. Some of our third-party AI and search providers process data outside Kazakhstan; the current list of sub-processors is available on request.",
+          "link": "Read about security"
+        }
+      ]
+    },
+    "founders": {
+      "title": "Founders",
+      "statement": "AdiletAI was founded in Shymkent, Kazakhstan, by {first}, {second} and {third}.",
+      "names": [
+        "Nariman Erkhan",
+        "Nursultan Mukhtaruly",
+        "Milan Gorislavets"
+      ],
+      "contact": "To reach the team, write to {email}."
+    },
+    "cta": {
+      "title": "Talk to the team behind AdiletAI",
+      "text": "Book a demo with a real question from your practice, or write to us about access, onboarding and how your data moves through the platform."
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "postYuristAi": {
+    "meta": {
+      "title": "AI and lawyers in Kazakhstan: what changes",
+      "description": "Which legal tasks AI handles well, where it falls short, why Kazakhstan sources matter, what Law No. 230-VIII says and how legal teams can adopt AI.",
+      "excerpt": "AI takes over the first pass of research, document review and drafting. Judgement and responsibility stay with the lawyer. Tasks, sources, the AI law, skills and a step-by-step adoption plan."
+    },
+    "title": "AI and the legal profession in Kazakhstan: what changes and what does not",
+    "lead": "AI already searches, summarises and drafts. It does not sign the advice. What changes for lawyers in Kazakhstan, what stays the same, and what the Law “On Artificial Intelligence” says.",
+    "breadcrumb": "AI and lawyers",
+    "toc": {
+      "tasks": "What AI does well in legal work",
+      "limits": "Where AI falls short",
+      "sources": "Why Kazakhstan sources matter",
+      "responsibility": "Responsibility stays with the lawyer",
+      "law": "What Kazakhstan’s AI law says",
+      "skills": "Skills lawyers need now",
+      "adoption": "How a legal team can adopt AI",
+      "unchanged": "What does not change"
+    },
+    "figure": {
+      "caption": "Illustration: the Sources panel of an Assistant answer about reducing a contractual penalty. It lists clause 7.2 of the attached contract and Articles 297 and 293 of the Kazakhstan Civil Code, each with a quoted passage. Sample data; the product interface is in Russian."
+    },
+    "cta": {
+      "title": "See how AI works with Kazakhstan law",
+      "text": "Bring a real question to the demo. We will show how the Assistant cites Kazakhstan legislation, how review tables keep the source behind every answer, and how your lawyers stay in control of the result."
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "security": {
+    "meta": {
+      "title": "Legal AI data security and confidentiality",
+      "description": "How AdiletAI protects legal data: its own identity provider, optional 2FA, encrypted uploaded files, TLS 1.2/1.3 and masked identifiers in typed messages."
+    },
+    "hero": {
+      "title": "Security and data handling",
+      "lead": "AdiletAI signs you in through its own identity provider, encrypts the files you upload and pseudonymises personal identifiers in your typed messages. Here is what each control covers, and where it stops."
+    },
+    "principles": {
+      "title": "Our principles.",
+      "continuation": "Each one rests on a control described below",
+      "items": [
+        {
+          "title": "Private to your account",
+          "body": "Vaults, chats and court practice analyses are private to your account. You can delete documents, vaults and chats at any time."
+        },
+        {
+          "title": "Masked identifiers in messages",
+          "body": "Personal identifiers that AdiletAI detects in your typed messages are replaced with placeholders before the message reaches the AI model."
+        },
+        {
+          "title": "Open about third parties",
+          "body": "We use third-party AI model and search providers, and we say so plainly. The sub-processor list is available on request."
+        },
+        {
+          "title": "The lawyer stays in charge",
+          "body": "Answers cite the sources they rely on, and the assistant is instructed to note what it could not verify. Output must be reviewed by a lawyer."
+        }
+      ]
+    },
+    "account": {
+      "title": "Account security",
+      "lead": "Sign-in runs through AdiletAI’s own identity provider using OpenID Connect with PKCE. You can add a second factor with any authenticator app.",
+      "twoFactor": {
+        "title": "Two-factor authentication is optional",
+        "body": "Each user can turn it on with any authenticator app that supports TOTP."
+      },
+      "flow": {
+        "title": "How sign-in works",
+        "steps": [
+          {
+            "title": "You sign in",
+            "body": "On AdiletAI’s own identity provider, adding a code from your authenticator app if you have turned on two-factor authentication."
+          },
+          {
+            "title": "OpenID Connect with PKCE",
+            "body": "The sign-in completes through OpenID Connect, with the authorisation code protected by PKCE."
+          },
+          {
+            "title": "Tokens stay on the server",
+            "body": "Access tokens stay on AdiletAI’s server, never in the browser. Your browser holds only an encrypted, HttpOnly session cookie."
+          }
+        ]
+      }
+    },
+    "protection": {
+      "title": "Data protection",
+      "lead": "Connections between your browser and AdiletAI are encrypted, and so are the files you upload. The web app also uses a strict Content Security Policy, HSTS and rate limiting on sign-in and API endpoints.",
+      "items": [
+        {
+          "label": "TLS 1.2 / 1.3",
+          "title": "Encrypted connections",
+          "body": "Connections between your browser and AdiletAI use TLS 1.2 or 1.3. HSTS tells browsers to connect over HTTPS only."
+        },
+        {
+          "label": "At rest",
+          "title": "Encrypted uploaded files",
+          "body": "Files you upload are encrypted at rest and served only through authenticated downloads."
+        },
+        {
+          "label": "CSP",
+          "title": "Strict Content Security Policy",
+          "body": "The app restricts which scripts and resources a page is allowed to load."
+        },
+        {
+          "label": "Rate limits",
+          "title": "Rate limiting",
+          "body": "Sign-in and API endpoints cap how many requests can be made in a short period."
+        }
+      ],
+      "scope": "Encryption at rest applies to the files you upload. We go through how other data is stored with your security team directly."
+    },
+    "personal": {
+      "title": "Personal data in your messages",
+      "lead": "Personal identifiers in your typed messages are pseudonymised before the message reaches the AI model and restored in the answer.",
+      "body": "AdiletAI replaces each identifier it detects with a placeholder, then puts the original value back in the answer you see.",
+      "listLabel": "Identifiers covered",
+      "identifiers": [
+        "IIN",
+        "BIN",
+        "IBAN",
+        "Phone numbers",
+        "E‑mail addresses",
+        "Personal names (best effort)"
+      ],
+      "scopeTitle": "Scope",
+      "scope": "Pseudonymisation applies only to the messages you type. It does not cover the text of attached documents or document text indexed for search. Nor does it cover the web-search queries that court practice analysis builds from your dispute description and sends to its search provider.",
+      "caveat": "Names are detected automatically, so some may be missed. Treat pseudonymisation as an extra safeguard, not a guarantee."
+    },
+    "workspace": {
+      "title": "Privacy of your workspace",
+      "items": [
+        {
+          "title": "Accessible only to you",
+          "body": "Your vaults, Assistant chats and court practice analyses are private to your account."
+        },
+        {
+          "title": "Delete at any time",
+          "body": "You can delete documents, whole vaults and chats whenever you need to."
+        }
+      ],
+      "privacy": "For how AdiletAI processes personal data, see the {link}.",
+      "privacyLink": "privacy policy"
+    },
+    "responsible": {
+      "title": "Responsible use.",
+      "continuation": "AdiletAI assists lawyers. It does not replace their judgement",
+      "items": [
+        {
+          "title": "Answers cite their sources",
+          "body": "The assistant cites the act and article it relied on. Numbered citations open a Sources panel grouped into documents, knowledge base and web."
+        },
+        {
+          "title": "Notes for the reviewing lawyer",
+          "body": "The assistant is instructed to add a note on what it could not verify, so the reviewing lawyer knows where to look."
+        },
+        {
+          "title": "Citation check before memo export",
+          "body": "Before a court practice memorandum is exported, every case number, norm and link in it is checked against the analysis’ own source list, and mismatches are flagged."
+        },
+        {
+          "title": "The lawyer stays responsible",
+          "body": "Output must be reviewed by a lawyer. AdiletAI assists legal professionals and does not provide legal advice."
+        }
+      ],
+      "link": "How AdiletAI grounds its answers",
+      "caption": "Illustration: exporting a court practice memorandum after the citation check found no mismatches. Sample data; the product interface is in Russian."
+    },
+    "faq": {
+      "title": "Security questions",
+      "more": "More questions from your security team? Write to {email}.",
+      "items": [
+        {
+          "q": "Where is our data processed?",
+          "a": "AdiletAI uses third-party AI model and search providers, and some of them process data outside Kazakhstan. The current list of sub-processors is available on request, and we walk your security team through the data flow before rollout."
+        },
+        {
+          "q": "Is the text of attached documents pseudonymised?",
+          "a": "No. Pseudonymisation applies only to the messages you type: IIN, BIN, IBAN, phone numbers, e‑mail addresses and, on a best-effort basis, personal names are replaced with placeholders before the message reaches the AI model. It does not cover the text of attached documents or document text indexed for search. Nor does it cover the web-search queries that court practice analysis builds from your dispute description and sends to its search provider."
+        },
+        {
+          "q": "Is two-factor authentication mandatory?",
+          "a": "No, it is optional. Each user can turn it on with any authenticator app that supports TOTP."
+        },
+        {
+          "q": "What is encrypted?",
+          "a": "Connections between your browser and AdiletAI use TLS 1.2/1.3. The files you upload are encrypted at rest and served only through authenticated downloads."
+        },
+        {
+          "q": "Can we delete our documents and chats?",
+          "a": "Yes. You can delete documents, vaults and chats at any time."
+        },
+        {
+          "q": "What if we need a dedicated deployment or special data-residency terms?",
+          "a": "Talk to us before rollout: book a demo or write to us, and we will discuss your requirements."
+        }
+      ]
+    },
+    "providers": {
+      "eyebrow": "Third parties",
+      "title": "AI providers and sub-processors",
+      "lead": "AdiletAI uses third-party AI model and search providers, and some of them process data outside Kazakhstan.",
+      "body": "The current list of sub-processors is available on request. Before rollout, we walk your security team through the data flow, from your browser to each provider and back.",
+      "flow": {
+        "title": "How a request travels",
+        "steps": [
+          {
+            "title": "From your browser to AdiletAI",
+            "body": "Over a connection encrypted with TLS 1.2/1.3."
+          },
+          {
+            "title": "Identifiers are pseudonymised",
+            "body": "Before your typed message is sent to the AI model, the personal identifiers AdiletAI detects in it are replaced with placeholders. Attached documents, document text indexed for search and court practice search queries are not masked."
+          },
+          {
+            "title": "Third-party providers",
+            "body": "AI model and search providers process the request. Some of them process data outside Kazakhstan."
+          },
+          {
+            "title": "Back to you",
+            "body": "AdiletAI restores the identifiers in the answer you see."
+          }
+        ]
+      },
+      "request": "Request the sub-processor list",
+      "subject": "Sub-processor list request",
+      "custom": "Need a dedicated deployment or special data-residency terms?",
+      "customLink": "Talk to us"
+    },
+    "cta": {
+      "title": "Preparing a security review?",
+      "text": "Book a demo and we will walk your security team through the data flow before rollout. The current sub-processor list is available on request."
+    }
+  }
+}

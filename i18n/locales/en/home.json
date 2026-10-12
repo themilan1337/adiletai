@@ -1,0 +1,309 @@
+{
+  "home": {
+    "meta": {
+      "title": "Legal AI platform for lawyers in Kazakhstan",
+      "description": "AdiletAI is a legal AI platform for in-house legal teams and law firms in Kazakhstan: cited research, contract risk review, review tables and court practice."
+    },
+    "hero": {
+      "title": "Legal AI that cites Kazakhstan law",
+      "lead": "Cited legal research, contract risk review and court practice analysis for in-house legal teams and law firms.",
+      "secondary": "See the product",
+      "caption": "Illustration: the Assistant answering a question about a contract penalty, with numbered citations to its sources. Sample data; the product interface is in Russian.",
+      "chat": {
+        "question": "Our supplier charges a daily penalty with no cap under clause 7.2 of the attached agreement. Can we ask the court to reduce it?",
+        "answer": [
+          "Yes. The supplier does not have to prove its losses to claim a penalty[3], but at your request the court may reduce a penalty that is excessively high compared with those losses[2].",
+          "Clause 7.2 sets a daily penalty with no upper limit[1], which supports the request. The court will weigh how much of the obligation was performed and the interests of both parties."
+        ],
+        "noteTitle": "Note for the reviewing lawyer",
+        "note": "The agreement does not show the supplier’s actual losses. Request them before relying on this argument."
+      }
+    },
+    "about": {
+      "heading": "What AdiletAI is",
+      "statement": "AdiletAI is a legal AI platform for in‑house legal teams and law firms in Kazakhstan.",
+      "continuation": "It answers legal questions with citations to Kazakhstan legislation, reviews contracts for risk and turns document sets into structured review tables, working with documents in Kazakh, Russian and English.",
+      "factsLabel": "Product facts",
+      "facts": [
+        {
+          "figure": "100",
+          "label": "Up to 100 files per chat",
+          "detail": "PDF, Word, Excel, PowerPoint, Outlook e‑mails, images and scans."
+        },
+        {
+          "figure": "500 MB",
+          "label": "Up to 500 MB per file",
+          "detail": "In a vault, with nested folders, bulk upload and background processing."
+        },
+        {
+          "figure": "6",
+          "label": "Answer types in review tables",
+          "detail": "Text, number, date, yes/no, currency and verbatim quote."
+        },
+        {
+          "figure": "5",
+          "label": "Export formats for review tables",
+          "detail": "Excel, CSV, PDF, Word and plain text."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "Platform",
+      "title": "Four modules, one workspace.",
+      "continuation": "Research, documents, bulk review and court practice",
+      "assistant": {
+        "name": "Assistant",
+        "title": "Research and contract review in one chat",
+        "body": "Ask a question under Kazakhstan law or attach a contract. Answers stream live, and a progress panel shows which searches the assistant ran in legislation and in your documents.",
+        "points": [
+          "Contract risk scan: a risk score, deal-breakers and risks ranked by severity, each with a quote from the contract and a recommendation",
+          "Suggested redlines and fallback positions where it proposes them",
+          "Up to 100 files per chat, from PDF and Word to Outlook e‑mails and scans",
+          "Drafting (beta): an editable first draft of a contract, claim or letter opens next to the chat"
+        ],
+        "caption": "Illustration: a contract risk scan inside an Assistant chat. Sample contract; scan results are in Russian, as the product produces them.",
+        "questions": {
+          "title": "Clarifying questions first",
+          "text": "For complex tasks it asks a few quick multiple-choice questions before it starts."
+        },
+        "modes": {
+          "title": "The right mode, automatically",
+          "text": "It recognises a general question, tax, contract analysis, drafting or translation, and shows the mode it chose as a badge.",
+          "prompt": "Which VAT rate applies to our deliveries from January 2026?"
+        }
+      },
+      "vault": {
+        "name": "Vault",
+        "title": "A private workspace for every matter",
+        "body": "Keep one vault per deal, client or matter, with nested folders and bulk upload. Built-in OCR, tuned for Kazakh and Russian, makes scans searchable, and search works by meaning, not keywords.",
+        "points": [
+          "Up to 500 MB per file: PDF, Word, Excel, PowerPoint, Outlook e‑mails, images and scans",
+          "Preview PDFs, images and PowerPoint slides inside the workspace",
+          "Attach one or more vaults to a chat to get answers grounded in your own documents, with the quoted passages"
+        ],
+        "caption": "Illustration: a vault with folders and files in several formats, with a Kazakh-language scan open in the preview. Sample files."
+      },
+      "review": {
+        "name": "Review tables",
+        "title": "Turn a set of documents into one table",
+        "body": "One row per document, one column per question: parties, contract value, term, governing law, termination rights. Cells fill in live, and answers come with the source passages they were drawn from.",
+        "points": [
+          "Six answer types: text, number, date, yes/no, currency and verbatim quote",
+          "A confidence score per cell, in the detail panel and as colour-coding in the Excel export",
+          "Edit or re-run any cell; export to Excel, CSV, PDF, Word or plain text"
+        ],
+        "caption": "Illustration: a review table filling in, with the source passages for one cell. Sample documents."
+      },
+      "court": {
+        "name": "Court practice analysis",
+        "title": "Court practice for a dispute, in one analysis",
+        "body": "Describe a dispute in plain language. AdiletAI works out your side and the dispute category, searches public Kazakhstan court and legal websites with official sources ranked first, and builds a table of relevant decisions.",
+        "points": [
+          "Court, date, applied norms, the court’s legal position and a link to the source, where the source states them",
+          "Winning and losing patterns, a risk register where each risk cites its basis or is labelled a hypothesis, and a prioritised preparation checklist",
+          "A one-page summary for a partner and an auto-assembled, editable memorandum, with every case number, norm and link checked against the analysis’ own sources before export"
+        ],
+        "background": "Runs in the background, so you can close the tab. Each analysis is private to the lawyer who created it.",
+        "caption": "Illustration: relevant decisions in a court practice analysis. Sample data, not real cases; analyses are produced in Russian.",
+        "risksCaption": "Illustration: the risk register, with one risk labelled a hypothesis, and the preparation checklist. Sample data.",
+        "memoCaption": "Illustration: exporting the memorandum after the citation check found no mismatches. Sample data."
+      }
+    },
+    "grounding": {
+      "title": "How an answer is grounded.",
+      "continuation": "Legislation first, then your documents, then a lawyer",
+      "steps": [
+        {
+          "title": "Legislation database",
+          "body": "A curated database of Kazakhstan’s codes and laws is searched first, and the answer cites the act and article, with the edition date when available."
+        },
+        {
+          "title": "Official sources",
+          "body": "When the database is not enough, it runs a web search that prioritises official sources such as adilet.zan.kz, gov.kz, akorda.kz and parlam.kz."
+        },
+        {
+          "title": "Your documents",
+          "body": "Attach files or connect a vault, and the answer draws on your documents and shows the passages it quoted."
+        },
+        {
+          "title": "Numbered citations",
+          "body": "Markers such as [1] and [2] open a Sources panel grouped into Documents, Knowledge base and Web."
+        },
+        {
+          "title": "A lawyer reviews",
+          "body": "The assistant is instructed to add a note for the reviewing lawyer on what it could not verify. Output must be reviewed by a lawyer."
+        }
+      ],
+      "fallback": "Nothing relevant in the database? The assistant is instructed to say so rather than answer from memory."
+    },
+    "kazakhstan": {
+      "title": "Built for Kazakhstan.",
+      "continuation": "Its law, its languages, its official sources",
+      "law": {
+        "title": "Kazakhstan law first",
+        "body": "The assistant is instructed to rely on Kazakhstan law, not Russian Federation law. Tax questions switch it to a Kazakhstan tax mode that takes rates and articles from the Tax Code in its legislation database."
+      },
+      "languages": {
+        "title": "Kazakh, Russian and English",
+        "body": "Ask in any of the three and general answers come back in your language. Documents are translated between them with structure, requisites and amounts intact."
+      },
+      "ocr": {
+        "title": "OCR for Kazakh scans",
+        "body": "Built-in OCR is tuned for Kazakh and Russian, so scanned contracts and powers of attorney become searchable."
+      },
+      "aifc": {
+        "title": "AIFC sources",
+        "body": "For Astana International Financial Centre (AIFC) matters, the assistant also prioritises aifc.kz and iac.kz, alongside the official portals for Kazakhstan legislation and state bodies.",
+        "official": "Official portals",
+        "aifcLabel": "AIFC"
+      },
+      "note": "The legislation database and the app interface are in Russian. Contract scans, drafts, tax-mode answers and court practice analyses are produced in Russian by default."
+    },
+    "audiences": {
+      "title": "Who it is for.",
+      "continuation": "Legal teams that work under Kazakhstan law every day",
+      "promptLabel": "A typical request",
+      "items": [
+        {
+          "title": "In-house legal teams",
+          "body": "For corporate legal departments that review the company’s contracts and answer the business’s legal questions.",
+          "prompt": "Scan this supply agreement against our playbook and list the deal-breakers.",
+          "jobs": [
+            {
+              "text": "Scan an incoming contract for deal-breakers before it goes to signature",
+              "module": "Assistant"
+            },
+            {
+              "text": "Turn a folder of supplier agreements into one table of parties, value, term and termination rights",
+              "module": "Review tables"
+            },
+            {
+              "text": "Answer tax questions with rates and articles taken from the Tax Code",
+              "module": "Assistant"
+            },
+            {
+              "text": "Apply your team’s positions, deal-breakers and house style, set up during onboarding",
+              "module": "Practice profile"
+            }
+          ]
+        },
+        {
+          "title": "Law firms",
+          "body": "For firms that run many matters at once and need research they can check against the source.",
+          "prompt": "The supplier is claiming a late-payment penalty from our client, the buyer, under a supply agreement. The penalty has no cap.",
+          "jobs": [
+            {
+              "text": "Keep a private vault for every client, deal or matter",
+              "module": "Vault"
+            },
+            {
+              "text": "Research court practice for a dispute and hand the partner a one-page summary",
+              "module": "Court practice analysis"
+            },
+            {
+              "text": "Start a claim, letter or power of attorney from an editable first draft",
+              "module": "Drafting (beta)"
+            },
+            {
+              "text": "Translate documents between Kazakh, Russian and English with requisites and amounts intact",
+              "module": "Assistant"
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "title": "See it on a matter like yours",
+        "text": "We walk your team through the product, then set up access and your practice profile during onboarding."
+      }
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "contactLead": "Something else?",
+      "contactLabel": "Write to us",
+      "items": [
+        {
+          "q": "What is AdiletAI?",
+          "a": "AdiletAI is a legal AI platform for in-house legal teams and law firms in Kazakhstan. It answers legal questions with citations to Kazakhstan legislation, reviews contracts for risk and turns document sets into structured review tables, working with documents in Kazakh, Russian and English."
+        },
+        {
+          "q": "Is AdiletAI part of the Әділет legal information system?",
+          "a": "No. AdiletAI is an independent company and is not affiliated with the Ministry of Justice’s “Әділет” legal information system (adilet.zan.kz). “Әділет” means “justice” in Kazakh. adilet.zan.kz is one of the official sources the assistant gives priority to."
+        },
+        {
+          "q": "Where do the answers come from?",
+          "a": "From Kazakhstan legislation first. The assistant searches a curated database of Kazakhstan’s codes and laws and cites the act and article it relied on, with the edition date when available. When the database is not enough, it runs a web search that prioritises official sources such as adilet.zan.kz, gov.kz, akorda.kz and parlam.kz; other sites can also appear in the results. If the database has nothing relevant, it is instructed to say so rather than answer from memory."
+        },
+        {
+          "q": "Can we work in Kazakh?",
+          "a": "Yes. Ask in Kazakh, Russian or English, and general answers come back in your language. Built-in OCR is tuned for Kazakh and Russian. Contract scans, drafts, tax-mode answers and court practice analyses are produced in Russian by default, and the legislation database and the app interface are in Russian."
+        },
+        {
+          "q": "Does AdiletAI replace a lawyer?",
+          "a": "No. It is a tool for lawyers. The assistant is instructed to rely on Kazakhstan law and to add a note for the reviewing lawyer on what it could not verify. Output must be reviewed by a lawyer."
+        },
+        {
+          "q": "How is our data handled?",
+          "a": "Vaults, chats and analyses are private to your account, and you can delete documents, vaults and chats at any time. Personal identifiers in your typed messages (IIN, BIN, IBAN, phone numbers, e‑mail addresses and, on a best-effort basis, personal names) are pseudonymised before the message reaches the AI model and restored in the answer. Names are detected automatically, so some may be missed. Pseudonymisation does not cover the text of attached documents or document text indexed for search. Nor does it cover the web-search queries that court practice analysis builds from your dispute description and sends to its search provider. AdiletAI uses third-party AI model and search providers; some of them process data outside Kazakhstan. The current list of sub-processors is available on request."
+        },
+        {
+          "q": "How do we get access?",
+          "a": "Access is by invitation, with assisted onboarding. Book a demo and we walk your team through the product, set up access and configure your practice profile. Usage is metered in credits, and plans are arranged with our team."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Security",
+      "title": "Security, stated plainly",
+      "lead": "These are the controls in place today. We walk your security team through the data flow before rollout.",
+      "link": "Read about security",
+      "rows": [
+        {
+          "title": "Sign-in through our own identity provider",
+          "body": "OpenID Connect with PKCE. Access tokens stay on the server, never in the browser."
+        },
+        {
+          "title": "Optional two-factor authentication",
+          "body": "Works with any authenticator app (TOTP)."
+        },
+        {
+          "title": "Encrypted files, hardened connections",
+          "body": "Uploaded files are encrypted at rest and served only through authenticated downloads. Connections between your browser and AdiletAI use TLS 1.2/1.3, with a strict Content Security Policy, HSTS and rate limiting on sign-in and API endpoints."
+        },
+        {
+          "title": "Pseudonymised messages",
+          "body": "Personal identifiers in your typed messages (IIN, BIN, IBAN, phone numbers, e‑mail addresses and, on a best-effort basis, personal names) are pseudonymised before the message reaches the AI model and restored in the answer."
+        },
+        {
+          "title": "Private to your account",
+          "body": "Vaults, chats and analyses are private to your account. You can delete documents, vaults and chats at any time."
+        }
+      ],
+      "pii": {
+        "title": "How a typed message is pseudonymised",
+        "typed": "What you type",
+        "sent": "What the AI model receives",
+        "restored": "Restored in the answer",
+        "message": "A buyer, IIN {iin}, has not paid for our delivery and does not answer calls to {phone}. How do we recover the debt?",
+        "answer": "Send the buyer, IIN {iin}, a written demand for payment and keep a record of your calls to {phone}. If the debt remains unpaid, you can go to court.",
+        "scope": "Applies to typed messages only. Attached documents, document text indexed for search and court practice search queries are not masked."
+      },
+      "providers": {
+        "title": "Third-party providers",
+        "body": "AdiletAI uses third-party AI model and search providers, and some of them process data outside Kazakhstan. The current list of sub-processors is available on request.",
+        "link": "Request the sub-processor list"
+      },
+      "custom": "Need a dedicated deployment or special data-residency terms?",
+      "customLink": "Talk to us"
+    },
+    "ctaBand": {
+      "title": "Bring a real question to the demo",
+      "text": "We walk your team through the Assistant, Vault, review tables and court practice analysis, then set up access and your practice profile with assisted onboarding.",
+      "email": "Or write to {email}"
+    },
+    "article": {
+      "published": "Published",
+      "updated": "Last updated",
+      "readingTime": "{n} min read"
+    }
+  }
+}

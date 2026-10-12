@@ -1,0 +1,25 @@
+{
+  "legalPrivacy": {
+    "meta": {
+      "title": "Privacy policy: how we process personal data",
+      "description": "How AdiletAI processes personal data on its website and legal AI platform: data we collect, AI providers, pseudonymisation, retention and your rights."
+    },
+    "title": "Privacy policy",
+    "lead": "How AdiletAI processes personal data on its website and platform, which third parties are involved, how long data is kept and how to exercise your rights.",
+    "tocLabel": "On this page",
+    "toc": {
+      "scope": "Who this policy covers",
+      "data": "Data we process",
+      "purposes": "Why we process it",
+      "grounds": "Legal grounds",
+      "providers": "AI model and search providers",
+      "pseudonymisation": "Pseudonymisation of messages",
+      "security": "How we protect data",
+      "retention": "Retention and deletion",
+      "rights": "Your rights",
+      "changes": "Changes to this policy",
+      "contact": "Contact"
+    },
+    "related": "Related pages"
+  }
+}

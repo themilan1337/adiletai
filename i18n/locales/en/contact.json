@@ -1,0 +1,108 @@
+{
+  "contact": {
+    "meta": {
+      "title": "Contact us: book a demo, sales and support",
+      "description": "Book an AdiletAI demo on your own documents, or e-mail us about plans, support or a security questionnaire. One address for all enquiries."
+    },
+    "hero": {
+      "title": "Talk to the AdiletAI team",
+      "lead": "Book a demo to see AdiletAI on your own documents and questions, or write to us about plans, support or a security questionnaire."
+    },
+    "facts": {
+      "label": "Contact details",
+      "items": [
+        {
+          "label": "E‑mail",
+          "value": "{email}",
+          "detail": "Plans, support and security questions"
+        },
+        {
+          "label": "Access",
+          "value": "By invitation",
+          "detail": "Assisted onboarding for your team"
+        },
+        {
+          "label": "Document languages",
+          "value": "Kazakh, Russian, English",
+          "detail": "The app interface is in Russian"
+        },
+        {
+          "label": "Founded in",
+          "value": "Shymkent, Kazakhstan",
+          "detail": "Independent company, not affiliated with adilet.zan.kz"
+        }
+      ]
+    },
+    "demo": {
+      "eyebrow": "Demo",
+      "title": "What happens on the demo",
+      "lead": "A working session with our team, built around your own documents and questions rather than a generic presentation.",
+      "agendaLabel": "Demo agenda",
+      "items": [
+        {
+          "title": "Your documents and questions",
+          "body": "Bring a contract, a document set or a legal question your team is working on. We work through it together in the Assistant, a vault, a review table or court practice analysis, whichever fits the task. If a document is confidential, a redacted copy works well."
+        },
+        {
+          "title": "Security and data flow",
+          "body": "We walk your security team through the data flow: sign-in, encryption of uploaded files and pseudonymisation of personal identifiers in typed messages, including what it does not cover. We also cover the third-party AI model and search providers we use, some of which process data outside Kazakhstan. The current list of sub-processors is available on request."
+        },
+        {
+          "title": "Onboarding and your practice profile",
+          "body": "We explain how assisted onboarding works and how your team’s practice profile is set up during it: positions on key terms, deal-breakers, escalation rules and house style. The Assistant and the contract risk scan apply the profile."
+        },
+        {
+          "title": "How plans are arranged",
+          "body": "Usage is metered in credits, and plans are arranged with our team. We explain how usage is counted and agree a plan that suits your team’s workload."
+        }
+      ],
+      "bookNote": "Pick a time that suits you. The booking page opens in a new tab.",
+      "invite": {
+        "title": "Who to invite",
+        "text": "The head of legal or a partner, a lawyer who will use AdiletAI day to day and, if your company requires it, a colleague from information security."
+      }
+    },
+    "email": {
+      "title": "Write to us.",
+      "continuation": "One address for all enquiries",
+      "lead": "Every message goes to {email}. The links below open an e‑mail with the subject already filled in.",
+      "channels": [
+        {
+          "title": "Plans and onboarding",
+          "body": "Plans and credits, assisted onboarding for your team, or questions about a dedicated deployment and special data-residency terms.",
+          "link": "E‑mail about a plan",
+          "subject": "AdiletAI: plans and onboarding"
+        },
+        {
+          "title": "Support",
+          "body": "For existing customers. Tell us the e‑mail address you sign in with, which module you were using and what happened. A screenshot helps.",
+          "link": "E‑mail support",
+          "subject": "AdiletAI: support request"
+        },
+        {
+          "title": "Security and procurement",
+          "body": "Security questionnaires, vendor due diligence and requests for the current list of sub-processors.",
+          "link": "Send a questionnaire",
+          "subject": "AdiletAI: security questionnaire"
+        }
+      ],
+      "signIn": {
+        "title": "Already a customer?",
+        "text": "Sign in to the platform at business.adiletai.com. If you can’t sign in, write to support."
+      },
+      "notAdvice": "We can’t advise on your legal matters, by e‑mail or otherwise. AdiletAI assists legal professionals and does not provide legal advice."
+    },
+    "related": {
+      "title": "Before the demo",
+      "lead": "If you want to prepare questions in advance, start with these pages.",
+      "features": "The Assistant, Vault, review tables and court practice analysis.",
+      "howItWorks": "How a question becomes an answer with citations to Kazakhstan law.",
+      "security": "Sign-in, encryption of uploaded files, pseudonymisation of personal identifiers in typed messages and sub-processors.",
+      "faq": "Short answers to common questions about AdiletAI."
+    },
+    "cta": {
+      "title": "See AdiletAI on your own documents",
+      "text": "Pick a time for a demo with our team. If you are already a customer, sign in to the platform."
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "common": {
+    "skipToContent": "Skip to content",
+    "logoAlt": "AdiletAI home",
+    "nav": {
+      "mainLabel": "Main navigation",
+      "platform": "Platform",
+      "howItWorks": "How it works",
+      "useCases": "Use cases",
+      "security": "Security",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "about": "About",
+      "contact": "Contact",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
+    },
+    "cta": {
+      "demo": "Book a demo",
+      "signIn": "Sign in",
+      "contact": "Contact us",
+      "learnMore": "Learn more",
+      "opensInNewTab": "(opens in a new tab)"
+    },
+    "langSwitcher": {
+      "label": "Language",
+      "current": "Language: {language}"
+    },
+    "localeSuggest": {
+      "dismiss": "Dismiss"
+    },
+    "footer": {
+      "tagline": "Legal AI platform for in-house legal teams and law firms in Kazakhstan.",
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal",
+      "languages": "Languages",
+      "rights": "© {year} AdiletAI. All rights reserved.",
+      "location": "Shymkent, Kazakhstan",
+      "notAdvice": "AdiletAI assists legal professionals. It does not provide legal advice, and its output must be reviewed by a qualified lawyer."
+    },
+    "legalLinks": {
+      "terms": "Terms of use",
+      "privacy": "Privacy policy",
+      "disclaimer": "Disclaimer"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumb",
+      "home": "Home"
+    }
+  }
+}

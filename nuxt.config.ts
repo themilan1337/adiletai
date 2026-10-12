@@ -1,82 +1,88 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite'
+import { readdirSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+
+// One JSON file per namespace per locale (i18n/locales/<locale>/<namespace>.json).
+// The namespace list is read from en/, so ru/ and kk/ must mirror it or the build fails.
+const NAMESPACES = readdirSync(fileURLToPath(new URL('./i18n/locales/en', import.meta.url)))
+  .filter(f => f.endsWith('.json'))
+  .sort()
+const files = (code: string) => NAMESPACES.map(f => `${code}/${f}`)
+
+// Production serves www (the apex 307-redirects to it). Override with NUXT_SITE_URL if that changes.
+const SITE_URL = process.env.NUXT_SITE_URL || 'https://www.adiletai.com'
 
 export default defineNuxtConfig({
   ssr: true,
-  compatibilityDate: "2025-07-15",
+  compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', 'nuxt-booster', '@nuxtjs/seo'],
+  // @nuxtjs/i18n must come before @nuxtjs/seo so site config, sitemap and schema.org pick up the locales.
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/icon', '@nuxtjs/i18n', '@nuxtjs/seo'],
+
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
+        { rel: 'apple-touch-icon', href: '/logo.png' },
+      ],
+      meta: [{ name: 'theme-color', content: '#fafaf9' }],
+    },
+  },
 
   site: {
-    url: 'https://adiletai.com',
-    name: 'AdiletAI - Юридический AI Помощник для Казахстана',
-    description: 'Интеллектуальный юридический помощник на базе искусственного интеллекта с интеграцией RAG. Получайте точные ответы на юридические вопросы, основанные на законодательстве Казахстана.',
-    defaultLocale: 'ru',
-    trailingSlash: false
+    url: SITE_URL,
+    name: 'AdiletAI',
+    trailingSlash: false,
   },
 
-  ogImage: {
-    enabled: true,
-    fonts: [
-      'Inter:400',
-      'Inter:700'
-    ]
+  i18n: {
+    baseUrl: SITE_URL,
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', language: 'en-US', name: 'English', dir: 'ltr', files: files('en') },
+      { code: 'ru', language: 'ru-KZ', name: 'Русский', dir: 'ltr', files: files('ru') },
+      { code: 'kk', language: 'kk-KZ', name: 'Қазақша', dir: 'ltr', files: files('kk') },
+    ],
+    // No server redirects by language: every URL is stable and crawlable, and pages stay prerenderable.
+    // LocaleSuggestion.vue offers the visitor's language instead.
+    detectBrowserLanguage: false,
   },
 
-  sitemap: {
-    strictNuxtContentPaths: true,
-    sitemaps: true
+  fonts: {
+    defaults: {
+      weights: [400, 500, 600, 700],
+      styles: ['normal'],
+      // Kazakh letters (ә ғ қ ң ө ұ ү һ і) live in cyrillic-ext.
+      subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+    },
   },
+
+  icon: {
+    serverBundle: { collections: ['hugeicons'] },
+    clientBundle: { scan: true },
+  },
+
+  // Static per-locale OG images live in public/og; no runtime rendering needed.
+  ogImage: { enabled: false },
 
   robots: {
-    enabled: true,
-    groups: [
-      {
-        userAgent: ['*'],
-        allow: ['/'],
-      },
-      {
-        userAgent: ['Googlebot', 'Bingbot', 'Yandex'],
-        allow: ['/'],
-      }
-    ]
+    // One permissive group: search engines and AI answer engines (GPTBot, ClaudeBot, PerplexityBot, ...) may all crawl.
+    groups: [{ userAgent: ['*'], allow: ['/'] }],
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/ru', '/kk'],
+      // The sitemap module's /sitemap.xml redirect gets re-localized into empty 200 pages; never emit those.
+      ignore: [/^\/(?:ru|kk)\/sitemap\.xml/],
+      failOnError: true,
+    },
   },
 
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
   },
-  booster: {
-
-    detection: {
-      performance: true,
-      browserSupport: true
-    },
-
-    performanceMetrics: {
-      device: {
-        hardwareConcurrency: { min: 2, max: 48 },
-        deviceMemory: { min: 2 }
-      },
-      timing: {
-        fcp: 800,
-        dcl: 1200
-      }
-    },
-
-    targetFormats: ['webp', 'avif', 'jpg|jpeg|png|gif'],
-
-    componentAutoImport: false,
-    componentPrefix: undefined,
-
-    /**
-     * IntersectionObserver rootMargin for Compoennts and Assets
-     */
-    lazyOffset: {
-      component: '0%',
-      asset: '0%'
-    }
-
-  }
-});
+})

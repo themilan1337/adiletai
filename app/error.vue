@@ -1,75 +1,53 @@
-<template>
-  <div class="container mx-auto mt-24 px-4 sm:px-0">
-    <header class="w-full max-w-xl px-4 sm:px-0 mx-auto text-center">
-      <h1
-        class="text-3xl gs text-center font-bold sm:font-normal sm:text-2xl md:text-3xl lg:text-4xl mt-6 sm:mt-8 md:mt-12 tracking-tight text-zinc-900 lg:text-balance"
-      >
-        {{ is404 ? 'Страница не найдена' : 'Произошла ошибка' }}
-      </h1>
-      <p class="text-sm text-center sm:text-base mt-3 sm:mt-4 text-zinc-600 lg:text-balance">
-        {{ is404
-          ? 'Мы не нашли запрошенную страницу. Возможно, она была перемещена или вы ошиблись в адресе.'
-          : 'Неожиданная ошибка при обработке запроса. Попробуйте обновить страницу или вернитесь на главную.'
-        }}
-      </p>
-      <nav class="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center mt-6 sm:mt-8 gap-3 sm:gap-2" aria-label="Основные действия">
-        <NuxtLink
-          to="/"
-          class="relative flex gs items-center justify-center text-center font-medium transition-colors duration-200 ease-in-out select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:z-10 rounded-md text-white bg-zinc-700 outline outline-zinc-700 hover:bg-zinc-600 focus-visible:outline-zinc-600 h-10 sm:h-9 px-4 text-sm"
-          aria-label="Вернуться на главную"
-        >
-          На главную
-        </NuxtLink>
-      </nav>
-    </header>
-  </div>
-</template>
-
 <script setup lang="ts">
 import type { NuxtError } from '#app'
-import { clearError } from '#app'
-import { computed } from 'vue'
 
 const props = defineProps<{ error: NuxtError }>()
+const { t } = useI18n()
+const localePath = useLocalePath()
 const is404 = computed(() => props.error?.statusCode === 404)
+const copy = computed(() => is404.value ? 'errors.notFound' : 'errors.generic')
 
-function goHome() {
-  clearError({ redirect: '/' })
-}
-
+// error.vue renders outside app.vue, so it sets html lang/dir itself. No hreflang/canonical on error pages.
+const head = useLocaleHead({ dir: true, lang: true, seo: false })
+useHead(() => ({ htmlAttrs: { lang: head.value.htmlAttrs.lang, dir: head.value.htmlAttrs.dir } }))
 useSeoMeta({
-  title: '404 — Страница не найдена | AdiletAI',
-  description: 'Запрошенная страница не найдена. Вернитесь на главную или ознакомьтесь с правилами сервиса.',
-  robots: 'noindex, nofollow',
-  ogType: 'website',
-  ogUrl: 'https://adiletai.com/404',
-  ogTitle: '404 — Страница не найдена | AdiletAI',
-  ogDescription: 'Кастомная 404-страница AdiletAI с согласованным дизайном.',
-  ogImage: 'https://adiletai.com/app.png',
-  ogLocale: 'ru_RU',
-  twitterCard: 'summary',
-  twitterTitle: '404 — Страница не найдена | AdiletAI',
-  twitterDescription: 'Вернитесь на главную страницу или откройте правила сервиса.',
-  twitterImage: 'https://adiletai.com/app.png',
-  // lang устанавливается через useHead ниже
-})
-
-useSchemaOrg([
-  {
-    '@type': 'WebPage',
-    '@id': 'https://adiletai.com/404#webpage',
-    url: 'https://adiletai.com/404',
-    name: '404 — Страница не найдена | AdiletAI',
-    description: 'Кастомная страница ошибки 404 проекта AdiletAI.',
-    inLanguage: 'ru-RU',
-    isPartOf: { '@id': 'https://adiletai.com/#website' },
-    about: { '@id': 'https://adiletai.com/#organization' },
-    dateModified: new Date().toISOString()
-  }
-])
-
-useHead({
-  link: [{ rel: 'canonical', href: 'https://adiletai.com/404' }],
-  htmlAttrs: { lang: 'ru' }
+  title: () => t(`${copy.value}.title`),
+  robots: 'noindex, follow',
 })
 </script>
+
+<template>
+  <div class="flex min-h-screen flex-col">
+    <SiteHeader />
+    <main id="main" class="flex flex-1 items-center">
+      <div class="mx-auto max-w-copy px-4 py-24 text-center sm:px-6">
+        <p class="font-mono text-sm text-ink-subtle">
+          {{ error?.statusCode ?? 500 }}
+        </p>
+        <h1 class="mt-3 font-display text-display-2 text-ink">
+          {{ t(`${copy}.title`) }}
+        </h1>
+        <p class="mt-4 text-lead text-ink-muted">
+          {{ t(`${copy}.text`) }}
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <NuxtLink
+            :to="localePath('/')"
+            class="inline-flex h-10 items-center rounded-control bg-stone-900 px-4 text-sm font-medium text-white hover:bg-stone-800"
+            @click="clearError()"
+          >
+            {{ t('errors.home') }}
+          </NuxtLink>
+          <NuxtLink
+            :to="localePath('/contact')"
+            class="inline-flex h-10 items-center rounded-control px-4 text-sm font-medium text-ink ring-1 ring-inset ring-line-strong hover:bg-stone-100"
+            @click="clearError()"
+          >
+            {{ t('errors.contact') }}
+          </NuxtLink>
+        </div>
+      </div>
+    </main>
+    <SiteFooter />
+  </div>
+</template>
